@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talent Pool - Choice SimpliHire</title>
+  <meta name="description" content="Access our global talent pool of qualified young professionals from around the world.">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html" class="brand-name">Choice SimpliHire</a>
+      </div>
+      
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about-us.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="why-choose-us.html" class="nav-link">Why Choose Us</a>
+        <a href="talent-pool.html" class="nav-link active">Talent Pool</a>
+        <a href="for-employers.html" class="nav-link">For Employers</a>
+        <a href="contact-us.html" class="nav-link">Contact Us</a>
+      </div>
+
+      <div class="navbar-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn lang-btn-active" onclick="selectLang('EN')">EN</button>
+          <button class="lang-btn" onclick="selectLang('中文')">中文</button>
+        </div>
+        <a href="contact-us.html" class="btn btn-primary">Get Started</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="talent-pool-page">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Talent Pool</h1>
+        <p>Access qualified young professionals from around the world</p>
+      </div>
+    </section>
+
+    <!-- Talent Overview -->
+    <section class="talent-overview">
+      <div class="container">
+        <div class="overview-content">
+          <h2>Global Talent Network</h2>
+          <p>
+            We have established a vast talent network covering North America, Europe, Oceania and Asia, 
+            with accumulated high-quality young professional resources from various industries. Our talent 
+            pool is continuously expanding and updating, ensuring that we can provide enterprises with 
+            the most suitable candidate resources at any time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Talent Source -->
+    <section class="talent-source">
+      <div class="container">
+        <div class="section-title">
+          <h2>Talent Types</h2>
+          <p>We cover a wide range of talent categories to meet diverse hiring needs</p>
+        </div>
+        <div class="talent-types">
+          <div class="type-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M3.5 2a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5h-9zm-1 0A1.5 1.5 0 0 0 1 3.5v11A1.5 1.5 0 0 0 2.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 11.5 2h-9z"/>
+              <path d="M11.854 8.354a.5.5 0 0 0-.708 0L8 11.293 7.854 11.15a.5.5 0 0 0-.708.708l.647.646a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708z"/>
+            </svg>
+            <span>Software Developers</span>
+          </div>
+          <div class="type-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM4.5 7a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zM1.5 10a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-2z"/>
+            </svg>
+            <span>Data Analysts</span>
+          </div>
+          <div class="type-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6.025 1.5a1.5 1.5 0 1 1 3 0v13a1.5 1.5 0 0 1-3 0v-13zm4.5 0a1.5 1.5 0 1 1 3 0v13a1.5 1.5 0 0 1-3 0v-13zM1.5 6.025a1.5 1.5 0 0 1 0-3h13a1.5 1.5 0 0 1 0 3h-13zm0 4.5a1.5 1.5 0 0 1 0-3h13a1.5 1.5 0 0 1 0 3h-13zm0 4.5a1.5 1.5 0 0 1 0-3h13a1.5 1.5 0 0 1 0 3h-13z"/>
+            </svg>
+            <span>Product Managers</span>
+          </div>
+          <div class="type-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM3.5 7.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-3 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0z"/>
+            </svg>
+            <span>Designers</span>
+          </div>
+          <div class="type-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M5 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm7-8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zM1.115 12.825a.5.5 0 0 0-.098.924l.995 1.665a.5.5 0 0 0 .785.098l1.39-1.154a.5.5 0 0 0-.269-.729L1.115 12.825zm11.67-5.21a.5.5 0 0 0-.098.924l.995 1.665a.5.5 0 0 0 .785.098l1.39-1.154a.5.5 0 0 0-.269-.729l-1.874-1.039zM3.5 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM1 6.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <span>Marketing Specialists</span>
+          </div>
+          <div class="type-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M2.5 12.5A.5.5 0 0 1 3 12h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-1zm3.5-3a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h2zm7.5-3a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h2zM3 4.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-1z"/>
+            </svg>
+            <span>Accounting & Finance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screening Standards -->
+    <section class="screening-standards">
+      <div class="container">
+        <div class="section-title">
+          <h2>Stringent Screening Process</h2>
+          <p>Multi-layer screening to ensure talent quality</p>
+        </div>
+        <div class="screening-content">
+          <p>
+            Our professional screening team conducts multi-dimensional assessment of each candidate, 
+            including educational background, work experience, skill proficiency, language ability, 
+            and cross-cultural adaptability, ensuring that only the most qualified talents enter 
+            our talent pool.
+          </p>
+          <div class="screening-steps">
+            <div class="screening-step">
+              <div class="step-number">1</div>
+              <h3>Resume Review</h3>
+              <p>Initial screening based on education, experience and skill requirements</p>
+            </div>
+            <div class="screening-step">
+              <div class="step-number">2</div>
+              <h3>Skill Assessment</h3>
+              <p>Professional skill tests and competency evaluation</p>
+            </div>
+            <div class="screening-step">
+              <div class="step-number">3</div>
+              <h3>Interview Evaluation</h3>
+              <p>In-depth interviews to assess personality and cultural fit</p>
+            </div>
+            <div class="screening-step">
+              <div class="step-number">4</div>
+              <h3>Reference Check</h3>
+              <p>Verification of work history and performance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Talent Advantages -->
+    <section class="talent-advantage">
+      <div class="container">
+        <div class="section-title">
+          <h2>Talent Advantages</h2>
+          <p>Why our talent pool stands out</p>
+        </div>
+        <div class="advantage-content">
+          <p>
+            Our talent pool has the following distinctive advantages that can help enterprises 
+            quickly find the most suitable candidates.
+          </p>
+          <div class="advantages-grid">
+            <div class="advantage-item">
+              <div class="advantage-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM6.707 6.293a1 1 0 0 1 1.414 0l2 2a1 1 0 1 1-1.414 1.414L8 8.414l-1.293 1.293a1 1 0 0 1-1.414-1.414l2-2z"/>
+                </svg>
+              </div>
+              <h3>High Quality</h3>
+              <p>Rigorous screening ensures talent quality</p>
+            </div>
+            <div class="advantage-item">
+              <div class="advantage-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 14.5 0h-13zM1.5 1a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-13z"/>
+                  <path d="M2 2.5h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5zm2 3H4a.5.5 0 0 1 .5-.5h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.5A.5.5 0 0 1 4 6v-.5zm4 0H8a.5.5 0 0 1 .5-.5h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.5A.5.5 0 0 1 8 6v-.5zm4 0h-.5a.5.5 0 0 1-.5-.5h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+              </div>
+              <h3>Diverse Backgrounds</h3>
+              <p>Global talents from various industries</p>
+            </div>
+            <div class="advantage-item">
+              <div class="advantage-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M15.54 7.127a.5.5 0 0 1 .136.584l-2.603 3.044a.75.75 0 0 1-.529.26h-4.716a.75.75 0 0 1-.53-.26L.324 7.711a.5.5 0 0 1 .136-.584A9.972 9.972 0 0 1 8 1a9.97 9.97 0 0 1 7.54 6.127zM8 14.95c-3.497 0-6.5-2.1-6.5-4.95 0-.652.098-1.27.268-1.858l2.741 3.189a.75.75 0 0 0 .529.26h4.716a.75.75 0 0 0 .53-.26l2.74-3.189A9.838 9.838 0 0 1 14.5 10c0 2.85-3.003 4.95-6.5 4.95z"/>
+                </svg>
+              </div>
+              <h3>Language Proficiency</h3>
+              <p>Excellent English communication skills</p>
+            </div>
+            <div class="advantage-item">
+              <div class="advantage-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-1zm-1.5-1a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-14zm13-6.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h10zm-1.5-1a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-1zM3 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-5z"/>
+                </svg>
+              </div>
+              <h3>Ready to Deploy</h3>
+              <p>Pre-screened talents ready for immediate hiring</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Find Your Ideal Talent Today</h2>
+          <p>Access our global talent pool and hire the best candidates for your team</p>
+          <div class="cta-actions">
+            <a href="contact-us.html" class="btn btn-primary">Get Started</a>
+            <a href="services.html" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="Choice SimpliHire Logo" class="logo-image">
+          <h3 class="brand-title">Choice SimpliHire</h3>
+          <p class="brand-slogan">Your choice for a simplified hiring process</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="WeChat">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M2.678 11.894a1 1 0 0 1-.287-.801 10.97 10.97 0 0 1 3.708-2.261 10.97 10.97 0 0 1 8.837 0 10.97 10.97 0 0 1 3.708 2.261 1 1 0 0 1-.288.801l-2.456 1.36a1 1 0 0 1-.797 0l-2.456-1.36a1 1 0 0 1-.797 0l-2.456-1.36a1 1 0 0 1-.797 0l-2.456 1.36zM5.884 8.614a1 1 0 0 1-.788.97 8.97 8.97 0 0 0-3.468 1.41A8.97 8.97 0 0 0 5.884 11a8.97 8.97 0 0 0 3.468-1.41A8.97 8.97 0 0 0 5.884 8.614zm5.455 0a1 1 0 0 1-.788.97 8.97 8.97 0 0 0-3.468 1.41 8.97 8.97 0 0 0 3.468 1.41 8.97 8.97 0 0 0 3.468-1.41 8.97 8.97 0 0 0-3.468-1.41z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.247 0-.692-.521-1.247-1.358-1.247-.839 0-1.359.555-1.359 1.247 0 .693.52 1.247 1.359 1.247zm12.312 8.212v-4.261c0-.966-.105-1.698-.75-2.52-.645-.823-1.673-1.662-3.322-1.662-1.649 0-2.687.839-3.322 1.662-.645.822-.75 1.554-.75 2.52v4.261h2.401V9.53c0-.72.201-1.433.586-2.032.385-.6.878-1.066 1.498-1.066.62 0 1.113.466 1.498 1.066.385.6.586 1.312.586 2.032v6.067h2.401z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.411L8 9.583l-1.326-.795-5.64 3.411V11.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.247zM1 11.5v-.117l4.708-2.825L1 5.383v.217a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.217l-4.708 2.825L15 11.383v.117a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="talent-pool.html">Talent Pool</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="for-employers.html">For Employers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.411L8 9.583l-1.326-.795-5.64 3.411V11.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.247zM1 11.5v-.117l4.708-2.825L1 5.383v.217a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.217l-4.708 2.825L15 11.383v.117a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+            </svg>
+            <span>[Reserved for official email]</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M3 1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V1zm1 13h8V2H4v12zM6 6.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm3.5 6.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-1-8a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm4.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM11 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+            </svg>
+            <span>[Reserved for official phone]</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+            <span>Level 17, 123 Pitt St, Sydney Australia 2000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Choice SimpliHire Pty Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const navbarLinks = document.getElementById('navbar-links');
+      navbarLinks.classList.toggle('navbar-links-active');
+    }
+
+    // Language switch
+    function selectLang(lang) {
+      const buttons = document.querySelectorAll('.lang-btn');
+      buttons.forEach(btn => btn.classList.remove('lang-btn-active'));
+      event.target.classList.add('lang-btn-active');
+      
+      if (lang === '中文') {
+        alert('中文版本即将上线，敬请期待！');
+        buttons[0].classList.add('lang-btn-active');
+        event.target.classList.remove('lang-btn-active');
+      }
+    }
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('navbar-links').classList.remove('navbar-links-active');
+      });
+    });
+  </script>
+</body>
+</html>
