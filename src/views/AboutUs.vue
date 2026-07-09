@@ -39,10 +39,16 @@
         </div>
         <div class="mv-grid">
           <div class="mv-card mission-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=350&fit=crop" alt="Mission">
+            </div>
             <h3>{{ i18n.t('about.missionVision.missionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.missionContent') }}</p>
           </div>
           <div class="mv-card vision-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=350&fit=crop" alt="Vision">
+            </div>
             <h3>{{ i18n.t('about.missionVision.visionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.visionContent') }}</p>
           </div>
@@ -59,18 +65,30 @@
         </div>
         <div class="values-grid">
           <div class="value-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=350&h=200&fit=crop" alt="Integrity">
+            </div>
             <h3>{{ i18n.t('about.values.value1') }}</h3>
             <p>{{ i18n.t('about.values.value1Desc') }}</p>
           </div>
           <div class="value-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=350&h=200&fit=crop" alt="Professionalism">
+            </div>
             <h3>{{ i18n.t('about.values.value2') }}</h3>
             <p>{{ i18n.t('about.values.value2Desc') }}</p>
           </div>
           <div class="value-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=350&h=200&fit=crop" alt="Innovation">
+            </div>
             <h3>{{ i18n.t('about.values.value3') }}</h3>
             <p>{{ i18n.t('about.values.value3Desc') }}</p>
           </div>
           <div class="value-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=350&h=200&fit=crop" alt="Customer Focus">
+            </div>
             <h3>{{ i18n.t('about.values.value4') }}</h3>
             <p>{{ i18n.t('about.values.value4Desc') }}</p>
           </div>
@@ -279,6 +297,25 @@ const regions = [
   box-shadow: var(--shadow-xl);
 }
 
+.mv-card .card-image {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.mv-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.mv-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
 
 
 .mv-card h3 {
@@ -321,7 +358,24 @@ const regions = [
   box-shadow: var(--shadow-xl);
 }
 
+.value-card .card-image {
+  width: 100%;
+  height: 140px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
 
+.value-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.value-card:hover .card-image img {
+  transform: scale(1.05);
+}
 
 .value-card h3 {
   font-family: var(--font-family-display);

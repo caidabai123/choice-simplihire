@@ -45,18 +45,30 @@
         </div>
         <div class="advantages-grid">
           <div class="advantage-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&h=250&fit=crop" alt="Simplified Hiring">
+            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card1') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card1Desc') }}</p>
           </div>
           <div class="advantage-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=250&fit=crop" alt="Trusted Service">
+            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card2') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card2Desc') }}</p>
           </div>
           <div class="advantage-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Global Talent">
+            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card3') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card3Desc') }}</p>
           </div>
           <div class="advantage-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1544717302-77c1702864a6?w=400&h=250&fit=crop" alt="Compliance">
+            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card4') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card4Desc') }}</p>
           </div>
@@ -327,7 +339,24 @@ onMounted(() => {
   box-shadow: var(--shadow-xl);
 }
 
+.card-image {
+  width: 100%;
+  height: 180px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
 
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.advantage-card:hover .card-image img {
+  transform: scale(1.05);
+}
 
 .card-title {
   font-family: var(--font-family-display);

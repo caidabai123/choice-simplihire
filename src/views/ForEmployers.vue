@@ -18,12 +18,21 @@
           <p>{{ i18n.t('forEmployers.concept.content') }}</p>
           <div class="pain-points">
             <div class="pain-item">
+              <div class="pain-image">
+                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=350&h=200&fit=crop" alt="Time-consuming">
+              </div>
               <span>{{ i18n.t('forEmployers.concept.pain1') }}</span>
             </div>
             <div class="pain-item">
+              <div class="pain-image">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=350&h=200&fit=crop" alt="Quality">
+              </div>
               <span>{{ i18n.t('forEmployers.concept.pain2') }}</span>
             </div>
             <div class="pain-item">
+              <div class="pain-image">
+                <img src="https://images.unsplash.com/photo-1544717302-77c1702864a6?w=350&h=200&fit=crop" alt="Compliance">
+              </div>
               <span>{{ i18n.t('forEmployers.concept.pain3') }}</span>
             </div>
           </div>
@@ -236,8 +245,9 @@ const toggleFaq = (index) => {
   border-radius: var(--radius-xl);
   padding: 32px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 16px;
   transition: all var(--transition-base);
   border: 1px solid transparent;
 }
@@ -250,7 +260,23 @@ const toggleFaq = (index) => {
   box-shadow: var(--shadow-xl);
 }
 
+.pain-image {
+  width: 100%;
+  height: 160px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
 
+.pain-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.pain-item:hover .pain-image img {
+  transform: scale(1.05);
+}
 
 .pain-item span {
   font-weight: var(--font-semibold);
