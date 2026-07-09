@@ -57,28 +57,28 @@
         <div class="advantages-grid">
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=400&h=250&fit=crop" alt="Simplified Hiring">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20corporate%20recruitment%20automation%20technology%20cost-effective%20hiring&image_size=landscape_4_3" alt="Simplified Hiring">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card1') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card1Desc') }}</p>
           </div>
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=400&h=250&fit=crop" alt="Trusted Service">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=trusted%20HR%20outsourcing%20service%20business%20partners%20relieving%20burden&image_size=landscape_4_3" alt="Trusted Service">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card2') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card2Desc') }}</p>
           </div>
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=250&fit=crop" alt="Global Talent">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=global%20talent%20matching%20international%20professional%20recruitment&image_size=landscape_4_3" alt="Global Talent">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card3') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card3Desc') }}</p>
           </div>
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=250&fit=crop" alt="Compliance">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=legal%20compliance%20international%20labor%20law%20corporate%20governance&image_size=landscape_4_3" alt="Compliance">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card4') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card4Desc') }}</p>

@@ -18,7 +18,7 @@
         <div class="reasons-grid">
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=350&h=200&fit=crop" alt="Deep Industry">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=deep%20industry%20knowledge%20expertise%20professional%20recruitment&image_size=landscape_4_3" alt="Deep Industry">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason1') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason1Desc') }}</p>
@@ -26,7 +26,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=350&h=200&fit=crop" alt="Talent Network">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vast%20talent%20network%20global%20candidate%20pool&image_size=landscape_4_3" alt="Talent Network">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason2') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason2Desc') }}</p>
@@ -34,7 +34,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=350&h=200&fit=crop" alt="Quality">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=high%20quality%20standards%20candidate%20selection%20excellence&image_size=landscape_4_3" alt="Quality">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason3') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason3Desc') }}</p>
@@ -42,7 +42,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=350&h=200&fit=crop" alt="Speed">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=fast%20efficient%20hiring%20quick%20response%20speed&image_size=landscape_4_3" alt="Speed">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason4') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason4Desc') }}</p>
@@ -50,7 +50,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=350&h=200&fit=crop" alt="Transparent">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=transparent%20service%20open%20communication%20honesty&image_size=landscape_4_3" alt="Transparent">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason5') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason5Desc') }}</p>

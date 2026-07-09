@@ -23,7 +23,7 @@
           <div class="intro-image">
             <div class="image-card">
               <div class="card-photo">
-                <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=400&h=300&fit=crop" alt="Company">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20corporate%20office%20Sydney%20business%20headquarters%20professional&image_size=landscape_4_3" alt="Company">
               </div>
               <div class="address-badge">
                 <span>{{ i18n.t('about.company.address') }}</span>
@@ -43,14 +43,14 @@
         <div class="mv-grid">
           <div class="mv-card mission-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=350&fit=crop" alt="Mission">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mission%20global%20talent%20recruitment%20streamlined%20hiring%20process&image_size=landscape_16_9" alt="Mission">
             </div>
             <h3>{{ i18n.t('about.missionVision.missionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.missionContent') }}</p>
           </div>
           <div class="mv-card vision-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=600&h=350&fit=crop" alt="Vision">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vision%20global%20HR%20leader%20international%20recruitment%20expansion&image_size=landscape_16_9" alt="Vision">
             </div>
             <h3>{{ i18n.t('about.missionVision.visionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.visionContent') }}</p>
@@ -69,28 +69,28 @@
         <div class="values-grid">
           <div class="value-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=350&h=200&fit=crop" alt="Integrity">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=streamline%20pragmatic%20efficiency%20business%20process%20optimization&image_size=landscape_4_3" alt="Integrity">
             </div>
             <h3>{{ i18n.t('about.values.value1') }}</h3>
             <p>{{ i18n.t('about.values.value1Desc') }}</p>
           </div>
           <div class="value-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=350&h=200&fit=crop" alt="Professionalism">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=trust%20burden%20relief%20reliable%20business%20partnership&image_size=landscape_4_3" alt="Professionalism">
             </div>
             <h3>{{ i18n.t('about.values.value2') }}</h3>
             <p>{{ i18n.t('about.values.value2Desc') }}</p>
           </div>
           <div class="value-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=350&h=200&fit=crop" alt="Innovation">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=precise%20matching%20talent%20selection%20recruitment&image_size=landscape_4_3" alt="Innovation">
             </div>
             <h3>{{ i18n.t('about.values.value3') }}</h3>
             <p>{{ i18n.t('about.values.value3Desc') }}</p>
           </div>
           <div class="value-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=350&h=200&fit=crop" alt="Customer Focus">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=compliance%20integrity%20legal%20corporate%20governance&image_size=landscape_4_3" alt="Customer Focus">
             </div>
             <h3>{{ i18n.t('about.values.value4') }}</h3>
             <p>{{ i18n.t('about.values.value4Desc') }}</p>

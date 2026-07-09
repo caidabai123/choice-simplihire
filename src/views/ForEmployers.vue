@@ -19,19 +19,19 @@
           <div class="pain-points">
             <div class="pain-item">
               <div class="pain-image">
-                <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=350&h=200&fit=crop" alt="Time-consuming">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=time%20consuming%20recruitment%20long%20process%20inefficient&image_size=landscape_4_3" alt="Time-consuming">
               </div>
               <span>{{ i18n.t('forEmployers.concept.pain1') }}</span>
             </div>
             <div class="pain-item">
               <div class="pain-image">
-                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=350&h=200&fit=crop" alt="Quality">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=poor%20quality%20candidates%20hiring%20mistakes&image_size=landscape_4_3" alt="Quality">
               </div>
               <span>{{ i18n.t('forEmployers.concept.pain2') }}</span>
             </div>
             <div class="pain-item">
               <div class="pain-image">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=350&h=200&fit=crop" alt="Compliance">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=compliance%20risk%20international%20labor%20law%20complex&image_size=landscape_4_3" alt="Compliance">
               </div>
               <span>{{ i18n.t('forEmployers.concept.pain3') }}</span>
             </div>
