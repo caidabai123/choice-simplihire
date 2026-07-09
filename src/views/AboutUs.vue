@@ -22,6 +22,7 @@
           </div>
           <div class="intro-image">
             <div class="image-card">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=450&fit=crop" alt="Our Office">
               <div class="address-badge">
                 <span>{{ i18n.t('about.company.address') }}</span>
               </div>
@@ -232,12 +233,14 @@ const regions = [
   border-radius: var(--radius-2xl);
   width: 100%;
   max-width: 380px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.image-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
 
 .address-badge {
@@ -246,10 +249,8 @@ const regions = [
   gap: 8px;
   background-color: var(--color-primary);
   color: white;
-  padding: 14px 24px;
-  border-radius: var(--radius-lg);
+  padding: 16px 24px;
   font-size: 0.75rem;
-  margin-top: 24px;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
@@ -454,8 +455,7 @@ const regions = [
   }
   
   .image-card {
-    height: 280px;
-    padding: 32px;
+    max-width: 100%;
   }
   
   .mv-card {
