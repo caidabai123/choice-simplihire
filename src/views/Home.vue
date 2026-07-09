@@ -57,13 +57,13 @@
           <div class="showcase-images">
             <div class="image-grid">
               <div class="image-item image-item-1">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=800&fit=crop&auto=format" alt="Team Collaboration">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&auto=format" alt="Team Collaboration">
               </div>
               <div class="image-item image-item-2">
-                <img src="https://images.unsplash.com/photo-1551009175-8a6597d642ba?w=600&h=400&fit=crop&auto=format" alt="Professional Woman">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=400&fit=crop&auto=format" alt="Professional Team">
               </div>
               <div class="image-item image-item-3">
-                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop&auto=format" alt="Team Celebration">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format" alt="Business Meeting">
               </div>
             </div>
           </div>
