@@ -23,13 +23,13 @@
               </div>
             </div>
             <div class="service-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=global%20young%20talent%20recruitment%20international%20hiring&image_size=landscape_4_3" alt="Global Talent Recruitment">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Global Talent Recruitment">
             </div>
           </div>
 
           <div class="service-card">
             <div class="service-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=full%20cycle%20recruitment%20process%20agency%20HR%20workflow&image_size=landscape_4_3" alt="Recruitment Process">
+              <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=400&h=300&fit=crop" alt="Recruitment Process">
             </div>
             <div class="service-left">
               <div class="service-content">
@@ -47,13 +47,13 @@
               </div>
             </div>
             <div class="service-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cross%20border%20visa%20compliance%20international%20employment%20law&image_size=landscape_4_3" alt="Visa Compliance">
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop" alt="Visa Compliance">
             </div>
           </div>
 
           <div class="service-card">
             <div class="service-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=overseas%20talent%20onboarding%20landing%20service%20relocation&image_size=landscape_4_3" alt="Overseas Onboarding">
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=300&fit=crop" alt="Overseas Onboarding">
             </div>
             <div class="service-left">
               <div class="service-content">
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="service-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=custom%20enterprise%20staffing%20solution%20tailored%20HR&image_size=landscape_4_3" alt="Custom Solutions">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Custom Solutions">
             </div>
           </div>
         </div>

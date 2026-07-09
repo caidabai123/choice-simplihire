@@ -26,7 +26,7 @@ export default {
       tag: 'Global Talent Solutions',
       title: 'Your Choice for a Simplified Hiring Process',
       subtitle: 'Ease your recruitment burden. We solve core corporate pain points including difficult overseas staffing, high labor costs and heavy management pressure. Source qualified young talents worldwide and streamline your full-cycle hiring process across 7 major developed countries.',
-      cta: 'Request a Hiring Consultation',
+      cta: 'Get Free Hiring Solution',
       learnMore: 'Learn More'
     },
     stats: {
@@ -63,6 +63,13 @@ export default {
       'New Zealand': 'New Zealand',
       'Canada': 'Canada',
       'Singapore': 'Singapore'
+    },
+    team: {
+      tag: 'Our Team',
+      title: 'Passionate Professionals, Driven by Purpose',
+      description: 'Our diverse team of young professionals brings together expertise in recruitment, HR management, and cross-cultural communication. We are committed to connecting global talents with exciting career opportunities.',
+      highlight1: 'Global Professionals',
+      highlight2: 'Successful Placements'
     },
     cta: {
       title: 'Simplify Every Hiring Process, Support Your Business Growth',

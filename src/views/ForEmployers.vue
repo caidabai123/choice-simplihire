@@ -1,4 +1,4 @@
-﻿﻿﻿﻿<template>
+﻿﻿﻿<template>
   <div class="for-employers-page">
     <section class="page-header">
       <div class="container">
@@ -18,21 +18,12 @@
           <p>{{ i18n.t('forEmployers.concept.content') }}</p>
           <div class="pain-points">
             <div class="pain-item">
-              <div class="pain-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=time%20consuming%20recruitment%20long%20process%20inefficient&image_size=landscape_4_3" alt="Time-consuming">
-              </div>
               <span>{{ i18n.t('forEmployers.concept.pain1') }}</span>
             </div>
             <div class="pain-item">
-              <div class="pain-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=poor%20quality%20candidates%20hiring%20mistakes&image_size=landscape_4_3" alt="Quality">
-              </div>
               <span>{{ i18n.t('forEmployers.concept.pain2') }}</span>
             </div>
             <div class="pain-item">
-              <div class="pain-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=compliance%20risk%20international%20labor%20law%20complex&image_size=landscape_4_3" alt="Compliance">
-              </div>
               <span>{{ i18n.t('forEmployers.concept.pain3') }}</span>
             </div>
           </div>
@@ -245,9 +236,8 @@ const toggleFaq = (index) => {
   border-radius: var(--radius-xl);
   padding: 32px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
   transition: all var(--transition-base);
   border: 1px solid transparent;
 }
@@ -260,23 +250,7 @@ const toggleFaq = (index) => {
   box-shadow: var(--shadow-xl);
 }
 
-.pain-image {
-  width: 100%;
-  height: 160px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-}
 
-.pain-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.pain-item:hover .pain-image img {
-  transform: scale(1.05);
-}
 
 .pain-item span {
   font-weight: var(--font-semibold);

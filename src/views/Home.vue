@@ -12,19 +12,8 @@
           <h1 class="hero-title">{{ i18n.t('home.hero.title') }}</h1>
           <p class="hero-subtitle">{{ i18n.t('home.hero.subtitle') }}</p>
           <div class="hero-actions">
-            <router-link to="/contact-us" class="btn btn-hero-primary">
-              <span>{{ i18n.t('home.hero.cta') }}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </router-link>
-            <router-link to="/services" class="btn btn-hero-secondary">{{ i18n.t('home.hero.learnMore') }}</router-link>
-          </div>
-          <div class="hero-scroll-hint">
-            <span>{{ i18n.t('home.hero.scrollHint') }}</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="scroll-arrow">
-              <path d="M12 5v14M5 12l7 7 7-7"/>
-            </svg>
+            <router-link to="/contact-us" class="btn btn-primary btn-lg">{{ i18n.t('home.hero.cta') }}</router-link>
+            <router-link to="/services" class="btn btn-secondary btn-lg">{{ i18n.t('home.hero.learnMore') }}</router-link>
           </div>
         </div>
         <div class="hero-stats">
@@ -47,6 +36,41 @@
       </div>
     </section>
 
+    <section class="team-showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <div class="showcase-text">
+            <div class="section-tag">{{ i18n.t('home.team.tag') }}</div>
+            <h2 class="showcase-title">{{ i18n.t('home.team.title') }}</h2>
+            <p class="showcase-description">{{ i18n.t('home.team.description') }}</p>
+            <div class="showcase-highlights">
+              <div class="highlight-item">
+                <div class="highlight-number">100+</div>
+                <div class="highlight-text">{{ i18n.t('home.team.highlight1') }}</div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-number">50+</div>
+                <div class="highlight-text">{{ i18n.t('home.team.highlight2') }}</div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-images">
+            <div class="image-grid">
+              <div class="image-item image-item-1">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=800&fit=crop" alt="Team Collaboration">
+              </div>
+              <div class="image-item image-item-2">
+                <img src="https://images.unsplash.com/photo-1573497491208-6b1acb26084c?w=600&h=400&fit=crop" alt="Professional Woman">
+              </div>
+              <div class="image-item image-item-3">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&h=400&fit=crop" alt="Team Celebration">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="core-advantages">
       <div class="container">
         <div class="section-header">
@@ -56,30 +80,18 @@
         </div>
         <div class="advantages-grid">
           <div class="advantage-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20corporate%20recruitment%20automation%20technology%20cost-effective%20hiring&image_size=landscape_4_3" alt="Simplified Hiring">
-            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card1') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card1Desc') }}</p>
           </div>
           <div class="advantage-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=trusted%20HR%20outsourcing%20service%20business%20partners%20relieving%20burden&image_size=landscape_4_3" alt="Trusted Service">
-            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card2') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card2Desc') }}</p>
           </div>
           <div class="advantage-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=global%20talent%20matching%20international%20professional%20recruitment&image_size=landscape_4_3" alt="Global Talent">
-            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card3') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card3Desc') }}</p>
           </div>
           <div class="advantage-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=legal%20compliance%20international%20labor%20law%20corporate%20governance&image_size=landscape_4_3" alt="Compliance">
-            </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card4') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card4Desc') }}</p>
           </div>
@@ -165,7 +177,7 @@ onMounted(() => {
 .hero-banner {
   background-color: var(--color-page-bg);
   color: var(--color-text-primary);
-  padding: 160px 0 140px;
+  padding: 180px 0 160px;
   position: relative;
   overflow: hidden;
 }
@@ -183,30 +195,30 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: opacity(0.2);
+  filter: opacity(0.15);
 }
 
 .hero-decoration {
   position: absolute;
-  top: -200px;
-  right: -100px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(30, 58, 95, 0.1) 0%, transparent 70%);
+  top: -250px;
+  right: -150px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(30, 58, 95, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
 
 .hero-decoration-2 {
-  top: 200px;
-  left: -150px;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(49, 130, 206, 0.08) 0%, transparent 70%);
+  top: 250px;
+  left: -200px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(49, 130, 206, 0.1) 0%, transparent 70%);
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -215,24 +227,25 @@ onMounted(() => {
 
 .hero-tag {
   display: inline-block;
-  padding: 8px 24px;
-  margin-bottom: 24px;
+  padding: 10px 30px;
+  margin-bottom: 32px;
   font-size: var(--text-sm);
-  font-weight: var(--font-semibold);
+  font-weight: 700;
   color: var(--color-primary);
-  background-color: var(--color-primary-50);
+  background-color: rgba(30, 58, 95, 0.06);
   border-radius: var(--radius-full);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .hero-title {
   font-family: var(--font-family-display);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: var(--font-bold);
-  margin-bottom: 32px;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 40px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
 }
 
 .text-primary {
@@ -240,105 +253,29 @@ onMounted(() => {
 }
 
 .hero-subtitle {
-  font-size: var(--text-lg);
-  line-height: 1.8;
-  margin-bottom: 40px;
-  color: var(--color-text-secondary);
-  max-width: 700px;
+  font-size: 1.25rem;
+  line-height: 1.9;
+  margin-bottom: 56px;
+  color: rgba(26, 32, 44, 0.7);
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-actions {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.btn-hero-primary {
-  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
-  color: white;
-  border: none;
-  padding: 18px 40px;
-  font-size: 1.125rem;
-  font-weight: 600;
-  border-radius: var(--radius-xl);
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
-  transform: translateY(0);
-}
-
-.btn-hero-primary:hover {
-  background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.45);
-}
-
-.btn-hero-primary:active {
-  transform: translateY(0);
-}
-
-.btn-hero-secondary {
-  background: transparent;
-  color: var(--color-text-secondary);
-  border: 1.5px solid var(--color-gray-200);
-  padding: 18px 32px;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: var(--radius-xl);
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-}
-
-.btn-hero-secondary:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  background-color: var(--color-primary-50);
-}
-
-.hero-scroll-hint {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
-}
-
-.scroll-arrow {
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-    opacity: 0.6;
-  }
-  50% {
-    transform: translateY(8px);
-    opacity: 1;
-  }
 }
 
 .hero-stats {
   display: flex;
   justify-content: center;
-  gap: 100px;
-  margin-top: 80px;
-  padding-top: 50px;
-  border-top: 1px solid var(--color-gray-100);
+  gap: 120px;
+  margin-top: 100px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(30, 58, 95, 0.1);
 }
 
 .stat-item {
@@ -347,24 +284,129 @@ onMounted(() => {
 
 .stat-number {
   font-family: var(--font-family-display);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: var(--font-bold);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
   color: var(--color-primary);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
 }
 
 .stat-divider {
-  width: 40px;
-  height: 2px;
+  width: 50px;
+  height: 3px;
   background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
-  margin: 12px auto;
+  margin: 16px auto;
 }
 
 .stat-label {
   font-size: var(--text-sm);
-  font-weight: var(--font-medium);
-  color: var(--color-text-muted);
+  font-weight: 600;
+  color: rgba(74, 85, 104, 0.8);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.team-showcase {
+  background-color: var(--color-white);
+  padding: 160px 0;
+}
+
+.showcase-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.showcase-text {
+  padding-right: 40px;
+}
+
+.showcase-title {
+  font-family: var(--font-family-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.showcase-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(74, 85, 104, 0.85);
+  margin-bottom: 48px;
+}
+
+.showcase-highlights {
+  display: flex;
+  gap: 48px;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-number {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.highlight-text {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: rgba(74, 85, 104, 0.75);
   letter-spacing: 0.02em;
+}
+
+.showcase-images {
+  position: relative;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.image-item {
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.image-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-2xl);
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.image-item:hover img {
+  transform: scale(1.05);
+}
+
+.image-item-1 {
+  grid-row: span 2;
+  height: 400px;
+}
+
+.image-item-2 {
+  height: 190px;
+}
+
+.image-item-3 {
+  height: 190px;
 }
 
 .core-advantages {
@@ -374,89 +416,72 @@ onMounted(() => {
 
 .section-header {
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto 60px;
+  max-width: 700px;
+  margin: 0 auto 80px;
 }
 
 .section-tag {
   display: inline-block;
-  padding: 6px 20px;
-  margin-bottom: 16px;
+  padding: 8px 24px;
+  margin-bottom: 20px;
   font-size: var(--text-xs);
-  font-weight: var(--font-semibold);
+  font-weight: 700;
   color: var(--color-primary);
-  background-color: var(--color-primary-50);
+  background-color: rgba(30, 58, 95, 0.06);
   border-radius: var(--radius-full);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .section-title {
   font-family: var(--font-family-display);
-  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-  font-weight: var(--font-bold);
-  margin-bottom: 20px;
-  line-height: 1.2;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .section-description {
-  font-size: var(--text-lg);
-  line-height: 1.7;
-  color: var(--color-text-secondary);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(74, 85, 104, 0.8);
 }
 
 .advantages-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 40px;
 }
 
 .advantage-card {
   background-color: var(--color-white);
   border-radius: var(--radius-2xl);
-  padding: 40px;
+  padding: 48px;
   transition: all var(--transition-base);
   border: 1px solid transparent;
 }
 
 .advantage-card:hover {
   background-color: var(--color-white);
-  border-color: var(--color-gray-100);
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
-}
-
-.card-image {
-  width: 100%;
-  height: 180px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.advantage-card:hover .card-image img {
-  transform: scale(1.05);
+  border-color: rgba(30, 58, 95, 0.1);
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-2xl);
 }
 
 .card-title {
   font-family: var(--font-family-display);
-  font-size: var(--text-xl);
-  font-weight: var(--font-semibold);
-  margin-bottom: 16px;
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: 20px;
   color: var(--color-text-primary);
+  letter-spacing: -0.01em;
 }
 
 .card-description {
-  font-size: var(--text-base);
-  line-height: 1.75;
-  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: rgba(74, 85, 104, 0.75);
 }
 
 .service-coverage {
@@ -493,9 +518,9 @@ onMounted(() => {
 }
 
 .country-name {
-  font-size: var(--text-sm);
-  font-weight: var(--font-medium);
-  color: var(--color-text-secondary);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: rgba(74, 85, 104, 0.85);
 }
 
 .country-card:hover .country-name {
@@ -504,33 +529,34 @@ onMounted(() => {
 
 .cta-section {
   background: linear-gradient(180deg, var(--color-white) 0%, var(--color-page-bg) 100%);
-  padding: 140px 0;
+  padding: 160px 0;
 }
 
 .cta-content {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .cta-title {
   font-family: var(--font-family-display);
-  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-  font-weight: var(--font-bold);
-  margin-bottom: 24px;
-  line-height: 1.25;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .cta-description {
-  font-size: var(--text-lg);
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-  margin-bottom: 40px;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(74, 85, 104, 0.8);
+  margin-bottom: 56px;
 }
 
 .cta-actions {
   display: flex;
-  gap: 24px;
+  gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -547,6 +573,24 @@ onMounted(() => {
   .hero-stats {
     gap: 60px;
   }
+  
+  .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .showcase-text {
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .showcase-highlights {
+    justify-content: center;
+  }
+  
+  .image-item-1 {
+    height: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -555,11 +599,11 @@ onMounted(() => {
   }
   
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   
   .hero-subtitle {
-    font-size: var(--text-base);
+    font-size: var(--text-lg);
   }
   
   .hero-stats {
@@ -569,6 +613,10 @@ onMounted(() => {
   
   .stat-number {
     font-size: 1.75rem;
+  }
+  
+  .team-showcase {
+    padding: 80px 0;
   }
   
   .core-advantages,

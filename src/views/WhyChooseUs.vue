@@ -17,41 +17,26 @@
         </div>
         <div class="reasons-grid">
           <div class="reason-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=deep%20industry%20knowledge%20expertise%20professional%20recruitment&image_size=landscape_4_3" alt="Deep Industry">
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason1') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason1Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vast%20talent%20network%20global%20candidate%20pool&image_size=landscape_4_3" alt="Talent Network">
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason2') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason2Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=high%20quality%20standards%20candidate%20selection%20excellence&image_size=landscape_4_3" alt="Quality">
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason3') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason3Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=fast%20efficient%20hiring%20quick%20response%20speed&image_size=landscape_4_3" alt="Speed">
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason4') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason4Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=transparent%20service%20open%20communication%20honesty&image_size=landscape_4_3" alt="Transparent">
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason5') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason5Desc') }}</p>
           </div>
@@ -180,24 +165,7 @@ const i18n = inject('i18n')
   box-shadow: var(--shadow-xl);
 }
 
-.reason-card .card-image {
-  width: 100%;
-  height: 160px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: 20px;
-}
 
-.reason-card .card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.reason-card:hover .card-image img {
-  transform: scale(1.05);
-}
 
 .reason-title {
   font-family: var(--font-family-display);

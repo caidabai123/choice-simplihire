@@ -32,27 +32,15 @@
           <p>{{ i18n.t('talentPool.source.content') }}</p>
           <div class="talent-types">
             <div class="type-item">
-              <div class="type-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=engineering%20software%20developer%20tech%20professional&image_size=landscape_4_3" alt="Engineering">
-              </div>
               <span>{{ i18n.t('talentPool.source.type1') }}</span>
             </div>
             <div class="type-item">
-              <div class="type-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=product%20manager%20business%20strategy%20professional&image_size=landscape_4_3" alt="Product">
-              </div>
               <span>{{ i18n.t('talentPool.source.type2') }}</span>
             </div>
             <div class="type-item">
-              <div class="type-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=UI%20UX%20designer%20creative%20art%20professional&image_size=landscape_4_3" alt="Design">
-              </div>
               <span>{{ i18n.t('talentPool.source.type3') }}</span>
             </div>
             <div class="type-item">
-              <div class="type-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=data%20analyst%20science%20analytics%20professional&image_size=landscape_4_3" alt="Data">
-              </div>
               <span>{{ i18n.t('talentPool.source.type4') }}</span>
             </div>
           </div>
@@ -114,30 +102,18 @@
           <p>{{ i18n.t('talentPool.advantage.content') }}</p>
           <div class="advantages-grid">
             <div class="advantage-item">
-              <div class="item-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=verified%20talent%20background%20check%20certified&image_size=landscape_4_3" alt="Verified">
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item1') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item1Desc') }}</p>
             </div>
             <div class="advantage-item">
-              <div class="item-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=experienced%20professional%20career%20expertise&image_size=landscape_4_3" alt="Experience">
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item2') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item2Desc') }}</p>
             </div>
             <div class="advantage-item">
-              <div class="item-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=excellent%20communication%20skills%20team%20collaboration&image_size=landscape_4_3" alt="Communication">
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item3') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item3Desc') }}</p>
             </div>
             <div class="advantage-item">
-              <div class="item-image">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=flexible%20work%20arrangement%20remote%20employment&image_size=landscape_4_3" alt="Flexible">
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item4') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item4Desc') }}</p>
             </div>
@@ -300,23 +276,7 @@ const i18n = inject('i18n')
   box-shadow: var(--shadow-lg);
 }
 
-.type-image {
-  width: 100%;
-  height: 120px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-}
 
-.type-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.type-item:hover .type-image img {
-  transform: scale(1.05);
-}
 
 .type-item span {
   font-weight: var(--font-medium);
@@ -434,25 +394,6 @@ const i18n = inject('i18n')
 .advantage-item:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-}
-
-.item-image {
-  width: 100%;
-  height: 120px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-
-.item-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.advantage-item:hover .item-image img {
-  transform: scale(1.05);
 }
 
 

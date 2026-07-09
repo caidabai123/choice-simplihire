@@ -22,9 +22,6 @@
           </div>
           <div class="intro-image">
             <div class="image-card">
-              <div class="card-photo">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20corporate%20office%20Sydney%20business%20headquarters%20professional&image_size=landscape_4_3" alt="Company">
-              </div>
               <div class="address-badge">
                 <span>{{ i18n.t('about.company.address') }}</span>
               </div>
@@ -42,16 +39,10 @@
         </div>
         <div class="mv-grid">
           <div class="mv-card mission-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mission%20global%20talent%20recruitment%20streamlined%20hiring%20process&image_size=landscape_16_9" alt="Mission">
-            </div>
             <h3>{{ i18n.t('about.missionVision.missionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.missionContent') }}</p>
           </div>
           <div class="mv-card vision-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vision%20global%20HR%20leader%20international%20recruitment%20expansion&image_size=landscape_16_9" alt="Vision">
-            </div>
             <h3>{{ i18n.t('about.missionVision.visionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.visionContent') }}</p>
           </div>
@@ -68,30 +59,18 @@
         </div>
         <div class="values-grid">
           <div class="value-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=streamline%20pragmatic%20efficiency%20business%20process%20optimization&image_size=landscape_4_3" alt="Integrity">
-            </div>
             <h3>{{ i18n.t('about.values.value1') }}</h3>
             <p>{{ i18n.t('about.values.value1Desc') }}</p>
           </div>
           <div class="value-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=trust%20burden%20relief%20reliable%20business%20partnership&image_size=landscape_4_3" alt="Professionalism">
-            </div>
             <h3>{{ i18n.t('about.values.value2') }}</h3>
             <p>{{ i18n.t('about.values.value2Desc') }}</p>
           </div>
           <div class="value-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=precise%20matching%20talent%20selection%20recruitment&image_size=landscape_4_3" alt="Innovation">
-            </div>
             <h3>{{ i18n.t('about.values.value3') }}</h3>
             <p>{{ i18n.t('about.values.value3Desc') }}</p>
           </div>
           <div class="value-card">
-            <div class="card-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=compliance%20integrity%20legal%20corporate%20governance&image_size=landscape_4_3" alt="Customer Focus">
-            </div>
             <h3>{{ i18n.t('about.values.value4') }}</h3>
             <p>{{ i18n.t('about.values.value4Desc') }}</p>
           </div>
@@ -253,25 +232,12 @@ const regions = [
   border-radius: var(--radius-2xl);
   width: 100%;
   max-width: 380px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  box-shadow: var(--shadow-lg);
-}
-
-.card-photo {
-  width: 100%;
-  height: 200px;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.card-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  justify-content: center;
+  padding: 40px;
 }
 
 .address-badge {
@@ -311,25 +277,6 @@ const regions = [
 .mv-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-}
-
-.mv-card .card-image {
-  width: 100%;
-  height: 200px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-
-.mv-card .card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.mv-card:hover .card-image img {
-  transform: scale(1.05);
 }
 
 
@@ -374,24 +321,7 @@ const regions = [
   box-shadow: var(--shadow-xl);
 }
 
-.value-card .card-image {
-  width: 100%;
-  height: 140px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: 20px;
-}
 
-.value-card .card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.value-card:hover .card-image img {
-  transform: scale(1.05);
-}
 
 .value-card h3 {
   font-family: var(--font-family-display);
