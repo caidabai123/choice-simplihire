@@ -11,6 +11,9 @@
           <div class="hero-tag">{{ i18n.t('home.hero.tag') }}</div>
           <h1 class="hero-title">{{ i18n.t('home.hero.title') }}</h1>
           <p class="hero-subtitle">{{ i18n.t('home.hero.subtitle') }}</p>
+          <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop" alt="Global Talent Recruitment" class="hero-image">
+          </div>
           <div class="hero-actions">
             <router-link to="/contact-us" class="btn btn-hero-primary">
               <span>{{ i18n.t('home.hero.cta') }}</span>
@@ -242,11 +245,25 @@ onMounted(() => {
 .hero-subtitle {
   font-size: var(--text-lg);
   line-height: 1.8;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   color: var(--color-text-secondary);
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-visual {
+  margin-bottom: 32px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
 }
 
 .hero-actions {
