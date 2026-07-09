@@ -2,54 +2,47 @@
   <div class="contact-us-page">
     <section class="page-header">
       <div class="container">
-        <h1>Contact Us</h1>
-        <p>Get in touch with our team for your recruitment needs</p>
+        <div class="page-tag">{{ i18n.t('contact.header.tag') }}</div>
+        <h1>{{ i18n.t('contact.header.title') }}</h1>
+        <p>{{ i18n.t('contact.header.subtitle') }}</p>
       </div>
     </section>
 
     <section class="contact-intro">
       <div class="container">
         <div class="intro-content">
-          <h2>Get In Touch With Us</h2>
-          <p>
-            If your enterprise has cross-border staffing demands or any consultation about global 
-            recruitment services, please feel free to contact us. We will provide you with exclusive 
-            customized hiring solutions and professional one-stop support to solve your recruitment 
-            difficulties, high labor costs and management pressure.
-          </p>
+          <h2>{{ i18n.t('contact.intro.title') }}</h2>
+          <p>{{ i18n.t('contact.intro.content') }}</p>
         </div>
       </div>
     </section>
 
     <section class="contact-information">
       <div class="container">
-        <div class="section-title">
-          <h2>Contact Information</h2>
+        <div class="section-header">
+          <div class="section-tag">{{ i18n.t('contact.info.tag') }}</div>
+          <h2>{{ i18n.t('contact.info.title') }}</h2>
         </div>
-        <div class="info-grid">
-          <div class="info-item">
-            <div class="info-label">Company Name</div>
-            <div class="info-value">Choice SimpliHire Pty Ltd</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">Headquarters</div>
-            <div class="info-value">Level 17, 123 Pitt St, Sydney Australia 2000</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">Service Coverage</div>
-            <div class="info-value">US, UK, Ireland, Australia, New Zealand, Canada, Singapore</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">Email</div>
-            <div class="info-value">[Reserved for official email]</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">Phone</div>
-            <div class="info-value">[Reserved for official phone]</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">Address</div>
-            <div class="info-value">Level 17, 123 Pitt St, Sydney Australia 2000</div>
+        <div class="contact-card">
+          <div class="contact-grid">
+            <div class="contact-item">
+              <div class="contact-content">
+                <span class="contact-label">{{ i18n.t('contact.info.label4') }}</span>
+                <a href="mailto:contact@datangcapital.com.au" class="contact-link">{{ i18n.t('contact.info.value4') }}</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-content">
+                <span class="contact-label">{{ i18n.t('contact.info.label5') }}</span>
+                <a href="tel:+61282110688" class="contact-link">{{ i18n.t('contact.info.value5') }}</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-content">
+                <span class="contact-label">{{ i18n.t('contact.info.label6') }}</span>
+                <span class="contact-value">{{ i18n.t('contact.info.value6') }}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -57,53 +50,70 @@
 
     <section class="contact-form-section">
       <div class="container">
-        <div class="section-title">
-          <h2>Free Hiring Consultation Form</h2>
+        <div class="section-header">
+          <div class="section-tag">{{ i18n.t('contact.form.tag') }}</div>
+          <h2>{{ i18n.t('contact.form.title') }}</h2>
+          <p>{{ i18n.t('contact.form.subtitle') }}</p>
         </div>
         <form @submit.prevent="handleSubmit" class="consultation-form">
           <div class="form-row">
             <div class="form-group">
-              <label for="company">Company Name</label>
-              <input type="text" id="company" v-model="formData.company" required placeholder="Enter your company name">
+              <label for="company">{{ i18n.t('contact.form.company') }}</label>
+              <input type="text" id="company" v-model="formData.company" required :placeholder="i18n.t('contact.form.companyPlaceholder')">
             </div>
             <div class="form-group">
-              <label for="countryIndustry">Country & Industry</label>
-              <input type="text" id="countryIndustry" v-model="formData.countryIndustry" required placeholder="e.g., Australia - Technology">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="jobDemands">Job Demands</label>
-              <input type="text" id="jobDemands" v-model="formData.jobDemands" required placeholder="e.g., Software Engineer, 5 positions">
-            </div>
-            <div class="form-group">
-              <label for="contactPerson">Contact Person</label>
-              <input type="text" id="contactPerson" v-model="formData.contactPerson" required placeholder="Enter contact person name">
+              <label for="countryIndustry">{{ i18n.t('contact.form.countryIndustry') }}</label>
+              <input type="text" id="countryIndustry" v-model="formData.countryIndustry" required :placeholder="i18n.t('contact.form.countryIndustryPlaceholder')">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" v-model="formData.email" required placeholder="Enter email address">
+              <label for="jobDemands">{{ i18n.t('contact.form.jobDemands') }}</label>
+              <input type="text" id="jobDemands" v-model="formData.jobDemands" required :placeholder="i18n.t('contact.form.jobDemandsPlaceholder')">
             </div>
             <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" v-model="formData.phone" placeholder="Enter phone number">
+              <label for="contactPerson">{{ i18n.t('contact.form.contactPerson') }}</label>
+              <input type="text" id="contactPerson" v-model="formData.contactPerson" required :placeholder="i18n.t('contact.form.contactPersonPlaceholder')">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">{{ i18n.t('contact.form.email') }}</label>
+              <input type="email" id="email" v-model="formData.email" required :placeholder="i18n.t('contact.form.emailPlaceholder')">
+            </div>
+            <div class="form-group">
+              <label for="phone">{{ i18n.t('contact.form.phone') }}</label>
+              <input type="tel" id="phone" v-model="formData.phone" :placeholder="i18n.t('contact.form.phonePlaceholder')">
             </div>
           </div>
           <div class="form-group full-width">
-            <label for="additionalRequirements">Additional Requirements</label>
-            <textarea id="additionalRequirements" v-model="formData.additionalRequirements" rows="4" placeholder="Describe any additional requirements or questions"></textarea>
+            <label for="additionalRequirements">{{ i18n.t('contact.form.additionalRequirements') }}</label>
+            <textarea id="additionalRequirements" v-model="formData.additionalRequirements" rows="4" :placeholder="i18n.t('contact.form.additionalRequirementsPlaceholder')"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary submit-btn">Submit Demand</button>
+          <button type="submit" class="btn btn-primary btn-lg submit-btn">{{ i18n.t('contact.form.submit') }}</button>
         </form>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>{{ i18n.t('contact.cta.title') }}</h2>
+          <p>{{ i18n.t('contact.cta.subtitle') }}</p>
+          <div class="cta-actions">
+            <a href="mailto:contact@datangcapital.com.au" class="btn btn-primary btn-lg">{{ i18n.t('contact.cta.email') }}</a>
+            <a href="tel:+61282110688" class="btn btn-secondary btn-lg">{{ i18n.t('contact.cta.call') }}</a>
+          </div>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, inject } from 'vue'
+
+const i18n = inject('i18n')
 
 const formData = ref({
   company: '',
@@ -116,7 +126,7 @@ const formData = ref({
 })
 
 const handleSubmit = () => {
-  alert('Thank you for your submission! Our team will contact you within 24 hours.')
+  alert(i18n.t('contact.success'))
   formData.value = {
     company: '',
     countryIndustry: '',
@@ -131,27 +141,48 @@ const handleSubmit = () => {
 
 <style scoped>
 .contact-us-page {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .page-header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  color: white;
-  padding: 60px 0;
+  background-color: var(--color-page-bg);
+  color: var(--color-text-primary);
+  padding: 100px 0 80px;
+  border-bottom: 1px solid var(--color-gray-100);
+  text-align: center;
+}
+
+.page-tag {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 16px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 8px;
+  font-family: var(--font-family-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .page-header p {
-  opacity: 0.9;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-intro {
-  background-color: white;
-  padding: 60px 0;
+  background: linear-gradient(180deg, var(--color-page-bg) 0%, var(--color-white) 15%);
+  padding: 120px 0;
 }
 
 .intro-content {
@@ -161,67 +192,146 @@ const handleSubmit = () => {
 }
 
 .intro-content h2 {
-  color: var(--primary-color);
-  font-size: 1.75rem;
-  margin-bottom: 20px;
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: var(--font-bold);
+  color: var(--color-text-primary);
+  margin-bottom: 24px;
+  line-height: 1.2;
 }
 
 .intro-content p {
-  color: var(--text-secondary);
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
   line-height: 1.8;
 }
 
 .contact-information {
-  background-color: var(--bg-light);
-  padding: 60px 0;
+  background-color: var(--color-white);
+  padding: 120px 0;
 }
 
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 900px;
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.section-header p {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gray-50) 100%);
+  border-radius: var(--radius-2xl);
+  padding: 60px;
+  border: 1px solid var(--color-gray-100);
+  box-shadow: var(--shadow-xl);
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.info-item {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px 24px;
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.contact-item {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px 24px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-gray-100);
+  transition: all var(--transition-base);
 }
 
-.info-label {
-  color: var(--primary-color);
-  font-weight: 600;
-  font-size: 0.875rem;
+.contact-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-100);
 }
 
-.info-value {
-  color: var(--text-secondary);
-  font-size: 0.9375rem;
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-value {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.contact-link {
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.contact-link:hover {
+  color: var(--color-primary);
 }
 
 .contact-form-section {
-  background-color: white;
-  padding: 60px 0;
+  background-color: var(--color-white);
+  padding: 120px 0;
 }
 
 .consultation-form {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  background-color: var(--bg-light);
-  border-radius: 12px;
-  padding: 40px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-2xl);
+  padding: 60px;
+  border: 1px solid var(--color-gray-100);
 }
 
 .form-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 .form-group {
@@ -230,52 +340,116 @@ const handleSubmit = () => {
 }
 
 .form-group.full-width {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .form-group label {
-  font-weight: 500;
-  color: var(--text-primary);
-  margin-bottom: 8px;
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 10px;
+  font-size: var(--text-sm);
 }
 
 .form-group input,
 .form-group textarea {
-  padding: 12px 16px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  background-color: white;
+  padding: 14px 18px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base);
+  transition: all var(--transition-fast);
+  background-color: var(--color-white);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
 }
 
 .form-group textarea {
   resize: vertical;
+  min-height: 120px;
 }
 
 .submit-btn {
   width: 100%;
-  padding: 14px 24px;
-  font-size: 1rem;
+  padding: 16px 24px;
+  font-size: var(--text-base);
+}
+
+.cta-section {
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-page-bg) 100%);
+  color: var(--color-text-primary);
+  padding: 120px 0;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.cta-content p {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
+  .page-header {
+    padding: 80px 0 60px;
+  }
+
+  .contact-card {
+    padding: 32px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-item {
+    padding: 28px 20px;
+  }
+
+  .contact-intro,
+  .contact-information,
+  .contact-form-section,
+  .cta-section {
+    padding: 80px 0;
+  }
+
   .page-header h1 {
     font-size: 1.75rem;
   }
 
   .consultation-form {
-    padding: 24px;
+    padding: 32px;
   }
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
   }
 }
 </style>

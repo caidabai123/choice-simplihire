@@ -4,31 +4,33 @@
       <div class="hero-background">
         <img src="/images/hero-bg.svg" alt="Hero Background" class="hero-bg-image">
       </div>
+      <div class="hero-decoration"></div>
+      <div class="hero-decoration hero-decoration-2"></div>
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">Your choice for a simplified hiring process</h1>
-          <p class="hero-subtitle">
-            Ease Your Recruitment Burden. We solve core corporate pain points including difficult overseas staffing, 
-            high labor costs and heavy management pressure, source qualified young talents worldwide, 
-            and streamline your full-cycle hiring process across US, UK, Ireland, Australia, New Zealand, Canada and Singapore.
-          </p>
+          <div class="hero-tag">{{ i18n.t('home.hero.tag') }}</div>
+          <h1 class="hero-title">{{ i18n.t('home.hero.title') }}</h1>
+          <p class="hero-subtitle">{{ i18n.t('home.hero.subtitle') }}</p>
           <div class="hero-actions">
-            <router-link to="/contact-us" class="btn btn-primary">Get Free Hiring Solution</router-link>
-            <router-link to="/services" class="btn btn-secondary">Learn More</router-link>
+            <router-link to="/contact-us" class="btn btn-primary btn-lg">{{ i18n.t('home.hero.cta') }}</router-link>
+            <router-link to="/services" class="btn btn-secondary btn-lg">{{ i18n.t('home.hero.learnMore') }}</router-link>
           </div>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <div class="stat-number">7+</div>
-            <div class="stat-label">Countries</div>
+            <div class="stat-number">{{ i18n.t('home.stats.countries') }}</div>
+            <div class="stat-divider"></div>
+            <div class="stat-label">{{ i18n.t('home.stats.countriesLabel') }}</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">10,000+</div>
-            <div class="stat-label">Talents</div>
+            <div class="stat-number">{{ i18n.t('home.stats.talents') }}</div>
+            <div class="stat-divider"></div>
+            <div class="stat-label">{{ i18n.t('home.stats.talentsLabel') }}</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">500+</div>
-            <div class="stat-label">Employers</div>
+            <div class="stat-number">{{ i18n.t('home.stats.employers') }}</div>
+            <div class="stat-divider"></div>
+            <div class="stat-label">{{ i18n.t('home.stats.employersLabel') }}</div>
           </div>
         </div>
       </div>
@@ -36,54 +38,55 @@
 
     <section class="core-advantages">
       <div class="container">
-        <div class="section-title">
-          <h2>Core Advantages</h2>
-          <p>Why employers trust us with their hiring needs</p>
+        <div class="section-header">
+          <div class="section-tag">{{ i18n.t('home.advantages.tag') }}</div>
+          <h2 class="section-title">{{ i18n.t('home.advantages.title') }}</h2>
+          <p class="section-description">{{ i18n.t('home.advantages.description') }}</p>
         </div>
-        <div class="grid grid-4">
-          <div class="card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-              </svg>
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
             </div>
-            <h3 class="card-title">Simplified & Cost-Effective Hiring</h3>
-            <p class="card-description">
-              We cut redundant recruitment procedures, shorten hiring cycles, and effectively solve enterprises' core pain points of difficult overseas recruitment, excessive time consumption and high comprehensive labor costs, greatly saving company's time cost, human resource cost and overall staffing expenditure.
-            </p>
+            <h3 class="card-title">{{ i18n.t('home.advantages.card1') }}</h3>
+            <p class="card-description">{{ i18n.t('home.advantages.card1Desc') }}</p>
           </div>
-          <div class="card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+          <div class="advantage-card">
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
             </div>
-            <h3 class="card-title">Full Burden Relief & Trusted Service</h3>
-            <p class="card-description">
-              We take over all tedious work including talent sourcing, screening, interview arrangement and overseas onboarding, thoroughly reduce corporate daily employment management pressure, solve your staffing pain points and acting as your reliable long-term hiring partner.
-            </p>
+            <h3 class="card-title">{{ i18n.t('home.advantages.card2') }}</h3>
+            <p class="card-description">{{ i18n.t('home.advantages.card2Desc') }}</p>
           </div>
-          <div class="card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
+          <div class="advantage-card">
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
             </div>
-            <h3 class="card-title">Precise Global Talent Matching</h3>
-            <p class="card-description">
-              Based on your job requirements, we select suitable young global talents accurately, reduce hiring trial and error, and improve team matching stability.
-            </p>
+            <h3 class="card-title">{{ i18n.t('home.advantages.card3') }}</h3>
+            <p class="card-description">{{ i18n.t('home.advantages.card3Desc') }}</p>
           </div>
-          <div class="card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+          <div class="advantage-card">
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
             </div>
-            <h3 class="card-title">100% Compliant Operation</h3>
-            <p class="card-description">
-              We strictly abide by local labor laws, visa policies and employment regulations of all served countries, helping enterprises avoid cross-border employment legal risks.
-            </p>
+            <h3 class="card-title">{{ i18n.t('home.advantages.card4') }}</h3>
+            <p class="card-description">{{ i18n.t('home.advantages.card4Desc') }}</p>
           </div>
         </div>
       </div>
@@ -91,14 +94,15 @@
 
     <section class="service-coverage">
       <div class="container">
-        <div class="section-title">
-          <h2>Service Coverage</h2>
-          <p>We provide recruitment services across 7 major developed countries</p>
+        <div class="section-header">
+          <div class="section-tag">{{ i18n.t('home.coverage.tag') }}</div>
+          <h2 class="section-title">{{ i18n.t('home.coverage.title') }}</h2>
+          <p class="section-description">{{ i18n.t('home.coverage.description') }}</p>
         </div>
         <div class="countries-grid">
           <div v-for="country in countries" :key="country.name" class="country-card">
             <div class="country-flag">{{ country.flag }}</div>
-            <div class="country-name">{{ country.name }}</div>
+            <div class="country-name">{{ i18n.t('home.countries.' + country.name) }}</div>
           </div>
         </div>
       </div>
@@ -107,11 +111,11 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>Simplify Every Hiring Process, Support Your Business Growth</h2>
-          <p>Let us help you find the right talent and grow your business globally</p>
+          <h2 class="cta-title">{{ i18n.t('home.cta.title') }}</h2>
+          <p class="cta-description">{{ i18n.t('home.cta.description') }}</p>
           <div class="cta-actions">
-            <router-link to="/contact-us" class="btn btn-primary">Get Started Now</router-link>
-            <router-link to="/for-employers" class="btn btn-outline">Learn More</router-link>
+            <router-link to="/contact-us" class="btn btn-primary btn-lg">{{ i18n.t('home.cta.getStarted') }}</router-link>
+            <router-link to="/for-employers" class="btn btn-secondary btn-lg">{{ i18n.t('home.cta.learnMore') }}</router-link>
           </div>
         </div>
       </div>
@@ -120,6 +124,10 @@
 </template>
 
 <script setup>
+import { onMounted, inject } from 'vue'
+
+const i18n = inject('i18n')
+
 const countries = [
   { name: 'United States', flag: 'US' },
   { name: 'United Kingdom', flag: 'UK' },
@@ -129,17 +137,40 @@ const countries = [
   { name: 'Canada', flag: 'CA' },
   { name: 'Singapore', flag: 'SG' }
 ]
+
+onMounted(() => {
+  setTimeout(() => {
+    const routesToPrefetch = [
+      '../views/AboutUs.vue',
+      '../views/Services.vue',
+      '../views/WhyChooseUs.vue',
+      '../views/TalentPool.vue',
+      '../views/ForEmployers.vue',
+      '../views/ContactUs.vue'
+    ]
+    
+    routesToPrefetch.forEach((route, index) => {
+      setTimeout(() => {
+        try {
+          import(route)
+        } catch (e) {
+          console.warn('Prefetch failed for:', route)
+        }
+      }, index * 300)
+    })
+  }, 1000)
+})
 </script>
 
 <style scoped>
 .home-page {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .hero-banner {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  color: white;
-  padding: 120px 0 100px;
+  background-color: var(--color-page-bg);
+  color: var(--color-text-primary);
+  padding: 160px 0 140px;
   position: relative;
   overflow: hidden;
 }
@@ -148,8 +179,8 @@ const countries = [
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   z-index: 0;
 }
 
@@ -157,34 +188,75 @@ const countries = [
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
+  filter: opacity(0.2);
+}
+
+.hero-decoration {
+  position: absolute;
+  top: -200px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(30, 58, 95, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-decoration-2 {
+  top: 200px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(49, 130, 206, 0.08) 0%, transparent 70%);
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   position: relative;
   z-index: 1;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
+.hero-tag {
+  display: inline-block;
+  padding: 8px 24px;
   margin-bottom: 24px;
-  line-height: 1.2;
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: var(--font-family-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.text-primary {
+  color: var(--color-primary);
 }
 
 .hero-subtitle {
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
   line-height: 1.8;
-  margin-bottom: 32px;
-  opacity: 0.95;
+  margin-bottom: 40px;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-actions {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -192,10 +264,10 @@ const countries = [
 .hero-stats {
   display: flex;
   justify-content: center;
-  gap: 80px;
-  margin-top: 60px;
-  padding-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 100px;
+  margin-top: 80px;
+  padding-top: 50px;
+  border-top: 1px solid var(--color-gray-100);
 }
 
 .stat-item {
@@ -203,162 +275,268 @@ const countries = [
 }
 
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--accent-color);
+  font-family: var(--font-family-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--font-bold);
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.stat-divider {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  margin: 12px auto;
 }
 
 .stat-label {
-  font-size: 0.875rem;
-  opacity: 0.8;
-  margin-top: 4px;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
 }
 
 .core-advantages {
-  background-color: var(--bg-light);
+  background: linear-gradient(180deg, var(--color-page-bg) 0%, var(--color-white) 15%);
+  padding: 140px 0;
 }
 
-.card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 32px;
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+.section-tag {
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 16px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.advantage-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-2xl);
+  padding: 40px;
+  transition: all var(--transition-base);
+  border: 1px solid transparent;
+}
+
+.advantage-card:hover {
+  background-color: var(--color-white);
+  border-color: var(--color-gray-100);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.card-icon-wrap {
+  margin-bottom: 28px;
 }
 
 .card-icon {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 20px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
-  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border-radius: var(--radius-xl);
   color: white;
+  box-shadow: var(--shadow-md);
 }
 
 .card-icon svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .card-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: var(--text-primary);
+  font-family: var(--font-family-display);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
 }
 
 .card-description {
-  font-size: 0.875rem;
-  line-height: 1.7;
-  color: var(--text-secondary);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--color-text-secondary);
 }
 
 .service-coverage {
-  background-color: white;
+  background-color: var(--color-white);
+  padding: 140px 0;
 }
 
 .countries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
 }
 
 .country-card {
-  background-color: var(--bg-light);
-  border-radius: 12px;
-  padding: 24px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: 32px 24px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
+  border: 1px solid var(--color-gray-100);
 }
 
 .country-card:hover {
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
   color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 
 .country-flag {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
+  font-size: 2.25rem;
+  margin-bottom: 14px;
 }
 
 .country-name {
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-text-secondary);
+}
+
+.country-card:hover .country-name {
+  color: white;
 }
 
 .cta-section {
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
-  color: white;
-  padding: 80px 0;
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-page-bg) 100%);
+  padding: 140px 0;
 }
 
 .cta-content {
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.cta-content h2 {
-  font-size: 2rem;
-  margin-bottom: 16px;
+.cta-title {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 24px;
+  line-height: 1.25;
 }
 
-.cta-content p {
-  font-size: 1.125rem;
-  opacity: 0.9;
-  margin-bottom: 32px;
+.cta-description {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
 }
 
 .cta-actions {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.btn-outline {
-  border-color: white;
-  color: white;
-}
-
-.btn-outline:hover {
-  background-color: white;
-  color: var(--primary-color);
+@media (max-width: 1024px) {
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .countries-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .hero-stats {
+    gap: 60px;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-banner {
-    padding: 80px 0 60px;
+    padding: 100px 0 80px;
   }
-
+  
   .hero-title {
     font-size: 2rem;
   }
-
+  
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: var(--text-base);
   }
-
+  
   .hero-stats {
-    gap: 32px;
-    margin-top: 40px;
+    gap: 40px;
+    margin-top: 50px;
   }
-
+  
   .stat-number {
     font-size: 1.75rem;
   }
+  
+  .core-advantages,
+  .service-coverage,
+  .cta-section {
+    padding: 80px 0;
+  }
+  
+  .countries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .country-card {
+    padding: 24px 16px;
+  }
+  
+  .advantage-card {
+    padding: 28px;
+  }
+  
+  .cta-title {
+    font-size: 1.75rem;
+  }
+}
 
-  .cta-content h2 {
-    font-size: 1.5rem;
+@media (max-width: 480px) {
+  .countries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .stat-divider {
+    display: none;
   }
 }
 </style>

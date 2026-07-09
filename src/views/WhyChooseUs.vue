@@ -2,77 +2,78 @@
   <div class="why-choose-us-page">
     <section class="page-header">
       <div class="container">
-        <h1>Why Choose Us</h1>
-        <p>Discover why we are the preferred recruitment partner for global employers</p>
+        <div class="page-tag">{{ i18n.t('whyChoose.header.tag') }}</div>
+        <h1>{{ i18n.t('whyChoose.header.title') }}</h1>
+        <p>{{ i18n.t('whyChoose.header.subtitle') }}</p>
       </div>
     </section>
 
     <section class="reasons-list">
       <div class="container">
+        <div class="section-header">
+          <div class="section-tag">{{ i18n.t('whyChoose.reasons.tag') }}</div>
+          <h2>{{ i18n.t('whyChoose.reasons.title') }}</h2>
+          <p>{{ i18n.t('whyChoose.reasons.subtitle') }}</p>
+        </div>
         <div class="reasons-grid">
           <div class="reason-card">
-            <div class="reason-number">1</div>
-            <div class="reason-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-              </svg>
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
             </div>
-            <div class="reason-content">
-              <h3 class="reason-title">Global Talent Resources, Rich Young Talent Pool</h3>
-              <p class="reason-description">We connect high-quality young professional talents from all industries around the world, break regional talent restrictions, and provide sufficient and high-quality candidate reserves for overseas enterprises, thoroughly solving the problem of difficult overseas staffing.</p>
-            </div>
+            <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason1') }}</h3>
+            <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason1Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="reason-number">2</div>
-            <div class="reason-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-              </svg>
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
             </div>
-            <div class="reason-content">
-              <h3 class="reason-title">Simplified Hiring, Significant Cost Reduction</h3>
-              <p class="reason-description">Optimize traditional complicated cross-border recruitment processes, eliminate invalid links, greatly shorten hiring cycles, and effectively reduce enterprises' time cost, human cost and talent trial and error cost, helping enterprises control overall labor expenditure efficiently.</p>
-            </div>
+            <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason2') }}</h3>
+            <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason2Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="reason-number">3</div>
-            <div class="reason-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
             </div>
-            <div class="reason-content">
-              <h3 class="reason-title">Employer-Oriented, Full Process Burden Relief</h3>
-              <p class="reason-description">We always take corporate employment demands as the core, undertake all trivial and complicated recruitment and employment management work, completely ease enterprises' staffing pressure and daily management burden, and practice the service concept of relieving corporate hiring burdens.</p>
-            </div>
+            <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason3') }}</h3>
+            <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason3Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="reason-number">4</div>
-            <div class="reason-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
             </div>
-            <div class="reason-content">
-              <h3 class="reason-title">Multi-Country Service Experience, Full Compliance Guarantee</h3>
-              <p class="reason-description">We are familiar with the labor policies, visa rules and employment laws of the US, UK, Ireland, Australia, New Zealand, Canada and Singapore. All services operate in full compliance to avoid legal and operational risks for enterprises.</p>
-            </div>
+            <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason4') }}</h3>
+            <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason4Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="reason-number">5</div>
-            <div class="reason-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+            <div class="card-icon-wrap">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
             </div>
-            <div class="reason-content">
-              <h3 class="reason-title">Precise Matching, Improve Employment Stability</h3>
-              <p class="reason-description">Through multi-dimensional talent evaluation and job demand matching, we deliver highly consistent talents for enterprises, reduce post-hiring adaptation problems and turnover rate, stabilize corporate team construction, and further reduce long-term employment costs and management pressure.</p>
-            </div>
+            <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason5') }}</h3>
+            <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason5Desc') }}</p>
           </div>
         </div>
       </div>
@@ -81,9 +82,12 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>Ready to Experience the Difference?</h2>
-          <p>Join hundreds of employers who trust us with their hiring needs</p>
-          <router-link to="/contact-us" class="btn btn-primary">Contact Us Today</router-link>
+          <h2>{{ i18n.t('whyChoose.cta.title') }}</h2>
+          <p>{{ i18n.t('whyChoose.cta.subtitle') }}</p>
+          <div class="cta-actions">
+            <router-link to="/contact-us" class="btn btn-primary btn-lg">{{ i18n.t('whyChoose.cta.contact') }}</router-link>
+            <router-link to="/services" class="btn btn-secondary btn-lg">{{ i18n.t('whyChoose.cta.services') }}</router-link>
+          </div>
         </div>
       </div>
     </section>
@@ -91,159 +95,208 @@
 </template>
 
 <script setup>
-const reasons = [
-  {
-    icon: 'bi bi-globe',
-    title: 'Global Talent Resources, Rich Young Talent Pool',
-    description: 'We connect high-quality young professional talents from all industries around the world, break regional talent restrictions, and provide sufficient and high-quality candidate reserves for overseas enterprises, thoroughly solving the problem of difficult overseas staffing.'
-  },
-  {
-    icon: 'bi bi-zap',
-    title: 'Simplified Hiring, Significant Cost Reduction',
-    description: 'Optimize traditional complicated cross-border recruitment processes, eliminate invalid links, greatly shorten hiring cycles, and effectively reduce enterprises\' time cost, human cost and talent trial and error cost, helping enterprises control overall labor expenditure efficiently.'
-  },
-  {
-    icon: 'bi bi-shield-check',
-    title: 'Employer-Oriented, Full Process Burden Relief',
-    description: 'We always take corporate employment demands as the core, undertake all trivial and complicated recruitment and employment management work, completely ease enterprises\' staffing pressure and daily management burden, and practice the service concept of relieving corporate hiring burdens.'
-  },
-  {
-    icon: 'bi bi-file-check',
-    title: 'Multi-Country Service Experience, Full Compliance Guarantee',
-    description: 'We are familiar with the labor policies, visa rules and employment laws of the US, UK, Ireland, Australia, New Zealand, Canada and Singapore. All services operate in full compliance to avoid legal and operational risks for enterprises.'
-  },
-  {
-    icon: 'bi bi-target',
-    title: 'Precise Matching, Improve Employment Stability',
-    description: 'Through multi-dimensional talent evaluation and job demand matching, we deliver highly consistent talents for enterprises, reduce post-hiring adaptation problems and turnover rate, stabilize corporate team construction, and further reduce long-term employment costs and management pressure.'
-  }
-]
+import { inject } from 'vue'
+
+const i18n = inject('i18n')
 </script>
 
 <style scoped>
 .why-choose-us-page {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .page-header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  color: white;
-  padding: 60px 0;
+  background-color: var(--color-page-bg);
+  color: var(--color-text-primary);
+  padding: 100px 0 80px;
+  border-bottom: 1px solid var(--color-gray-100);
+  text-align: center;
+}
+
+.page-tag {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 16px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 8px;
+  font-family: var(--font-family-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .page-header p {
-  opacity: 0.9;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .reasons-list {
-  padding: 80px 0;
-  background-color: white;
+  padding: 120px 0;
+  background: linear-gradient(180deg, var(--color-page-bg) 0%, var(--color-white) 15%);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.section-header p {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
 }
 
 .reasons-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
 .reason-card {
-  display: flex;
-  gap: 24px;
-  padding: 32px;
-  background-color: var(--bg-light);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  align-items: flex-start;
+  background-color: var(--color-white);
+  border-radius: var(--radius-2xl);
+  padding: 40px;
+  transition: all var(--transition-base);
+  border: 1px solid transparent;
 }
 
 .reason-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
+  background-color: var(--color-white);
+  border-color: var(--color-gray-100);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
 }
 
-.reason-number {
-  width: 48px;
-  height: 48px;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 10px;
+.card-icon-wrap {
+  margin-bottom: 24px;
+}
+
+.card-icon {
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-.reason-icon {
-  width: 70px;
-  height: 70px;
-  background-color: var(--primary-light);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border-radius: var(--radius-xl);
   color: white;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  flex-shrink: 0;
+  box-shadow: var(--shadow-md);
 }
 
-.reason-content {
-  flex: 1;
+.card-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .reason-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  margin-bottom: 12px;
+  font-family: var(--font-family-display);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
 }
 
 .reason-description {
-  color: var(--text-secondary);
-  font-size: 0.9375rem;
-  line-height: 1.8;
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.75;
 }
 
 .cta-section {
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
-  color: white;
-  padding: 80px 0;
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-page-bg) 100%);
+  padding: 120px 0;
 }
 
 .cta-content {
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .cta-content h2 {
-  font-size: 2rem;
-  margin-bottom: 12px;
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 20px;
+  line-height: 1.25;
 }
 
 .cta-content p {
-  font-size: 1.125rem;
-  opacity: 0.9;
-  margin-bottom: 24px;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
+  .page-header {
+    padding: 80px 0 60px;
+  }
+
+  .reasons-list,
+  .cta-section {
+    padding: 80px 0;
+  }
+
   .page-header h1 {
     font-size: 1.75rem;
   }
 
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
   .reason-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 28px;
   }
 
   .cta-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 </style>

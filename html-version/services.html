@@ -6,40 +6,60 @@
   <title>Services - Choice SimpliHire</title>
   <meta name="description" content="Comprehensive recruitment solutions tailored for overseas employers">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar" id="navbar">
+  <!-- Header -->
+  <header class="header" id="header">
     <div class="container">
-      <div class="navbar-brand">
-        <a href="index.html" class="brand-name">Choice SimpliHire</a>
-      </div>
-      
-      <div class="navbar-links" id="navbar-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about-us.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link active">Services</a>
-        <a href="why-choose-us.html" class="nav-link">Why Choose Us</a>
-        <a href="talent-pool.html" class="nav-link">Talent Pool</a>
-        <a href="for-employers.html" class="nav-link">For Employers</a>
-        <a href="contact-us.html" class="nav-link">Contact Us</a>
-      </div>
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Choice SimpliHire" class="logo-img" />
+          <div class="logo-text">
+            <span class="logo-text-main">Choice SimpliHire</span>
+            <span class="logo-text-sub">CHOICE SIMPLIHIRE</span>
+          </div>
+        </a>
 
-      <div class="navbar-actions">
-        <div class="lang-switcher">
-          <button class="lang-btn lang-btn-active" onclick="selectLang('EN')">EN</button>
-          <button class="lang-btn" onclick="selectLang('中文')">中文</button>
+        <nav class="nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="why-choose-us.html" class="nav-link">Why Choose Us</a></li>
+            <li><a href="talent-pool.html" class="nav-link">Talent Pool</a></li>
+            <li><a href="for-employers.html" class="nav-link">For Employers</a></li>
+            <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switcher">
+            <button class="lang-btn active" onclick="selectLang('EN')">EN</button>
+            <button class="lang-btn" onclick="selectLang('中文')">中文</button>
+          </div>
+          <a href="contact-us.html" class="btn btn-primary btn-sm">Get Started</a>
+          <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <a href="contact-us.html" class="btn btn-primary">Get Started</a>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" onclick="toggleMobileMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-        </button>
       </div>
     </div>
-  </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about-us.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="services.html" class="mobile-nav-link active">Services</a></li>
+        <li><a href="why-choose-us.html" class="mobile-nav-link">Why Choose Us</a></li>
+        <li><a href="talent-pool.html" class="mobile-nav-link">Talent Pool</a></li>
+        <li><a href="for-employers.html" class="mobile-nav-link">For Employers</a></li>
+        <li><a href="contact-us.html" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
 
   <div class="services-page">
     <section class="page-header">
@@ -63,7 +83,7 @@
             </div>
             <div class="service-content">
               <h3 class="service-title">Global Young Talent Recruitment</h3>
-              <p class="service-description">We collect high-quality young talent resources from all over the world, conduct precise screening according to corporate job responsibilities, industry attributes and team demands, efficiently deliver matched candidate resources, and directly solve enterprises' long-standing pain point of difficult overseas talent recruitment, helping enterprises quickly fill talent gaps.</p>
+              <p class="service-description">We collect high-quality young talent resources from all over the world, conduct precise screening according to corporate requirements, efficiently deliver matched candidate resources, and directly solve enterprises' long-standing pain point of <span class="emphasis">difficult overseas talent recruitment</span>.</p>
             </div>
           </div>
 
@@ -77,7 +97,7 @@
             </div>
             <div class="service-content">
               <h3 class="service-title">Full-Cycle Recruitment Process Agency</h3>
-              <p class="service-description">Take over the whole hiring work for enterprises, including job posting, resume screening, candidate communication, interview arrangement and result follow-up. Help corporate HR teams save massive time and energy, completely reduce enterprise recruitment and daily management pressure, and let internal teams focus on core business management.</p>
+              <p class="service-description">Take over the whole hiring work for enterprises, including job posting, resume screening, interview arrangement and result follow-up. Help corporate HR teams save massive time and energy, and let internal teams focus on <span class="emphasis">core business management</span>.</p>
             </div>
           </div>
 
@@ -90,8 +110,8 @@
               </svg>
             </div>
             <div class="service-content">
-              <h3 class="service-title">Cross-Border Employment Compliance & Visa Support</h3>
-              <p class="service-description">Provide professional visa consultation, policy interpretation and application assistance for cross-border talents. Strictly follow local employment rules of target countries to ensure all hiring procedures are compliant, safe and effective, helping enterprises avoid operational risks caused by unfamiliar cross-border policies.</p>
+              <h3 class="service-title">Cross-Border Employment <span class="text-primary">Compliance</span> & Visa Support</h3>
+              <p class="service-description">Provide professional visa consultation, policy interpretation and application assistance. Strictly follow local employment rules to ensure all hiring procedures are <span class="emphasis">compliant, safe and effective</span>, helping enterprises avoid operational risks.</p>
             </div>
           </div>
 
@@ -103,8 +123,8 @@
               </svg>
             </div>
             <div class="service-content">
-              <h3 class="service-title">Overseas Talent Onboarding & Landing Service</h3>
-              <p class="service-description">Provide standardized guidance for cross-border talents' overseas entry, adaptation and onboarding, solve various landing trivial matters, ensure talents take up their posts smoothly, greatly reduce corporate employment management pressure and follow-up operational burdens.</p>
+              <h3 class="service-title">Overseas Talent <span class="text-primary">Onboarding</span> & Landing Service</h3>
+              <p class="service-description">Provide standardized guidance for cross-border talents' overseas entry and adaptation, solve various landing trivial matters, ensure talents take up their posts <span class="emphasis">smoothly</span>, and reduce corporate employment management pressure.</p>
             </div>
           </div>
 
@@ -117,8 +137,8 @@
               </svg>
             </div>
             <div class="service-content">
-              <h3 class="service-title">Customized Enterprise Staffing Solutions</h3>
-              <p class="service-description">Aim at long-term staffing difficulties, seasonal labor gaps, high labor cost expenditure and heavy team management pressure of different enterprises, formulate exclusive simplified recruitment solutions to realize stable and sustainable talent supply and optimize corporate comprehensive employment costs.</p>
+              <h3 class="service-title">Customized Enterprise <span class="text-primary">Staffing</span> Solutions</h3>
+              <p class="service-description">Aim at long-term staffing difficulties, seasonal labor gaps and high labor costs, formulate <span class="emphasis">exclusive simplified recruitment solutions</span> to realize stable talent supply and optimize corporate comprehensive employment costs.</p>
             </div>
           </div>
         </div>
@@ -128,7 +148,7 @@
     <section class="service-process">
       <div class="container">
         <div class="section-title">
-          <h2>Our Service Process</h2>
+          <h2>Our <span class="text-primary">Service Process</span></h2>
           <p>Streamlined workflow for efficient hiring</p>
         </div>
         <div class="process-steps">
@@ -176,7 +196,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <img src="images/logo.svg" alt="Choice SimpliHire Logo" class="logo-image">
+          <img src="images/logo.png" alt="Choice SimpliHire Logo" class="logo-image">
           <h3 class="brand-title">Choice SimpliHire</h3>
           <p class="brand-slogan">Your choice for a simplified hiring process</p>
           <div class="social-links">
@@ -229,13 +249,13 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.411L8 9.583l-1.326-.795-5.64 3.411V11.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.247zM1 11.5v-.117l4.708-2.825L1 5.383v.217a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.217l-4.708 2.825L15 11.383v.117a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
             </svg>
-            <span>[Reserved for official email]</span>
+            <span>contact@datangcapital.com.au</span>
           </div>
           <div class="contact-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path d="M3 1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V1zm1 13h8V2H4v12zM6 6.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm3.5 6.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-1-8a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm4.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM11 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
             </svg>
-            <span>[Reserved for official phone]</span>
+            <span>+61 2 8211 0688</span>
           </div>
           <div class="contact-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -255,29 +275,46 @@
   </footer>
 
   <script>
-    window.addEventListener('scroll', function() {
-      document.getElementById('navbar').classList.toggle('navbar-scrolled', window.scrollY > 50);
-    });
+    (function() {
+      const debounce = function(func, wait) {
+        let timeout;
+        return function() {
+          const context = this, args = arguments;
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+      };
 
-    function toggleMobileMenu() {
-      document.getElementById('navbar-links').classList.toggle('navbar-links-active');
-    }
+      const header = document.getElementById('header');
+      const updateHeader = debounce(function() {
+        header.classList.toggle('header-scrolled', window.scrollY > 50);
+      }, 10);
 
-    function selectLang(lang) {
-      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('lang-btn-active'));
-      event.target.classList.add('lang-btn-active');
-      if (lang === '中文') {
-        alert('中文版本即将上线，敬请期待！');
-        document.querySelector('.lang-btn:first-child').classList.add('lang-btn-active');
-        event.target.classList.remove('lang-btn-active');
+      window.addEventListener('scroll', updateHeader, { passive: true });
+
+      function toggleMobileMenu() {
+        document.getElementById('mobile-menu').classList.toggle('active');
       }
-    }
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('navbar-links').classList.remove('navbar-links-active');
+      function selectLang(lang) {
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        if (lang === '中文') {
+          alert('中文版本即将上线，敬请期待！');
+          document.querySelector('.lang-btn:first-child').classList.add('active');
+          event.target.classList.remove('active');
+        }
+      }
+
+      document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          document.getElementById('mobile-menu').classList.remove('active');
+        });
       });
-    });
+
+      window.toggleMobileMenu = toggleMobileMenu;
+      window.selectLang = selectLang;
+    })();
   </script>
 </body>
 </html>

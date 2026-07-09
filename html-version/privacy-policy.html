@@ -6,41 +6,60 @@
   <title>Privacy Policy - Choice SimpliHire</title>
   <meta name="description" content="Read our privacy policy to understand how we collect, use, and protect your personal information.">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
+  <!-- Header -->
+  <header class="header" id="header">
     <div class="container">
-      <div class="navbar-brand">
-        <a href="index.html" class="brand-name">Choice SimpliHire</a>
-      </div>
-      
-      <div class="navbar-links" id="navbar-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about-us.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="why-choose-us.html" class="nav-link">Why Choose Us</a>
-        <a href="talent-pool.html" class="nav-link">Talent Pool</a>
-        <a href="for-employers.html" class="nav-link">For Employers</a>
-        <a href="contact-us.html" class="nav-link">Contact Us</a>
-      </div>
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Choice SimpliHire" class="logo-img" />
+          <div class="logo-text">
+            <span class="logo-text-main">Choice SimpliHire</span>
+            <span class="logo-text-sub">CHOICE SIMPLIHIRE</span>
+          </div>
+        </a>
 
-      <div class="navbar-actions">
-        <div class="lang-switcher">
-          <button class="lang-btn lang-btn-active" onclick="selectLang('EN')">EN</button>
-          <button class="lang-btn" onclick="selectLang('中文')">中文</button>
+        <nav class="nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="why-choose-us.html" class="nav-link">Why Choose Us</a></li>
+            <li><a href="talent-pool.html" class="nav-link">Talent Pool</a></li>
+            <li><a href="for-employers.html" class="nav-link">For Employers</a></li>
+            <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switcher">
+            <button class="lang-btn active" onclick="selectLang('EN')">EN</button>
+            <button class="lang-btn" onclick="selectLang('中文')">中文</button>
+          </div>
+          <a href="contact-us.html" class="btn btn-primary btn-sm">Get Started</a>
+          <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <a href="contact-us.html" class="btn btn-primary">Get Started</a>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" onclick="toggleMobileMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-        </button>
       </div>
     </div>
-  </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li><a href="about-us.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="why-choose-us.html" class="mobile-nav-link">Why Choose Us</a></li>
+        <li><a href="talent-pool.html" class="mobile-nav-link">Talent Pool</a></li>
+        <li><a href="for-employers.html" class="mobile-nav-link">For Employers</a></li>
+        <li><a href="contact-us.html" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
 
   <!-- Main Content -->
   <div class="privacy-policy-page">
@@ -104,7 +123,7 @@
           <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on our website. Your continued use of our services after the effective date of the revised policy constitutes your acceptance of the changes.</p>
           
           <p><strong>7. Contact Us</strong></p>
-          <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at [Reserved for official email].</p>
+          <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at contact@datangcapital.com.au.</p>
         </div>
       </div>
     </section>
@@ -129,7 +148,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <img src="images/logo.svg" alt="Choice SimpliHire Logo" class="logo-image">
+          <img src="images/logo.png" alt="Choice SimpliHire Logo" class="logo-image">
           <h3 class="brand-title">Choice SimpliHire</h3>
           <p class="brand-slogan">Your choice for a simplified hiring process</p>
           <div class="social-links">
@@ -177,13 +196,13 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.411L8 9.583l-1.326-.795-5.64 3.411V11.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.247zM1 11.5v-.117l4.708-2.825L1 5.383v.217a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.217l-4.708 2.825L15 11.383v.117a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
             </svg>
-            <span>[Reserved for official email]</span>
+            <span>contact@datangcapital.com.au</span>
           </div>
           <div class="contact-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path d="M3 1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V1zm1 13h8V2H4v12zM6 6.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm3.5 6.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-1-8a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm4.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM11 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
             </svg>
-            <span>[Reserved for official phone]</span>
+            <span>+61 2 8211 0688</span>
           </div>
           <div class="contact-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -197,45 +216,34 @@
       <div class="footer-divider"></div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Choice SimpliHire Pty Ltd. All Rights Reserved.</p>
+        <p>&copy; 2026 Choice SimpliHire Pty Ltd. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Navbar scroll effect
+    const header = document.getElementById('header');
     window.addEventListener('scroll', function() {
-      const navbar = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('navbar-scrolled');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
-      }
+      header.classList.toggle('header-scrolled', window.scrollY > 50);
     });
 
-    // Mobile menu toggle
     function toggleMobileMenu() {
-      const navbarLinks = document.getElementById('navbar-links');
-      navbarLinks.classList.toggle('navbar-links-active');
+      document.getElementById('mobile-menu').classList.toggle('active');
     }
 
-    // Language switch
     function selectLang(lang) {
-      const buttons = document.querySelectorAll('.lang-btn');
-      buttons.forEach(btn => btn.classList.remove('lang-btn-active'));
-      event.target.classList.add('lang-btn-active');
-      
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
       if (lang === '中文') {
         alert('中文版本即将上线，敬请期待！');
-        buttons[0].classList.add('lang-btn-active');
-        event.target.classList.remove('lang-btn-active');
+        document.querySelector('.lang-btn:first-child').classList.add('active');
+        event.target.classList.remove('active');
       }
     }
 
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-link').forEach(link => {
+    document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
       link.addEventListener('click', function() {
-        document.getElementById('navbar-links').classList.remove('navbar-links-active');
+        document.getElementById('mobile-menu').classList.remove('active');
       });
     });
   </script>

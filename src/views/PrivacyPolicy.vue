@@ -2,29 +2,47 @@
   <div class="privacy-policy-page">
     <section class="page-header">
       <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Your privacy is our priority</p>
+        <div class="page-tag">{{ i18n.t('privacy.header.tag') }}</div>
+        <h1>{{ i18n.t('privacy.header.title') }}</h1>
+        <p>{{ i18n.t('privacy.header.subtitle') }}</p>
       </div>
     </section>
 
     <section class="policy-content">
       <div class="container">
+        <div class="section-header">
+          <div class="section-tag">{{ i18n.t('privacy.content.tag') }}</div>
+          <h2>{{ i18n.t('privacy.content.title') }}</h2>
+        </div>
         <div class="policy-card">
-          <p>
-            Choice SimpliHire Pty Ltd is committed to protecting the privacy and personal information 
-            security of all corporate clients and candidate users.
-          </p>
-          <p>
-            We will strictly keep confidential all corporate business information, recruitment demands 
-            and talent personal information obtained in the service process, and will not disclose, sell 
-            or transmit any private information to third parties without official authorization.
-          </p>
-          <p>
-            All user information is only used for internal service matching, business communication and 
-            after-sales support. We abide by the privacy laws and regulations of all service countries 
-            and continuously optimize information security management to ensure the legitimate rights 
-            and interests of employers and talents.
-          </p>
+          <div class="policy-item">
+            <h3>{{ i18n.t('privacy.content.item1') }}</h3>
+            <p>{{ i18n.t('privacy.content.item1Desc') }}</p>
+          </div>
+          <div class="policy-item">
+            <h3>{{ i18n.t('privacy.content.item2') }}</h3>
+            <p>{{ i18n.t('privacy.content.item2Desc') }}</p>
+          </div>
+          <div class="policy-item">
+            <h3>{{ i18n.t('privacy.content.item3') }}</h3>
+            <p>{{ i18n.t('privacy.content.item3Desc') }}</p>
+          </div>
+          <div class="policy-item">
+            <h3>{{ i18n.t('privacy.content.item4') }}</h3>
+            <p>{{ i18n.t('privacy.content.item4Desc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>{{ i18n.t('privacy.cta.title') }}</h2>
+          <p>{{ i18n.t('privacy.cta.subtitle') }}</p>
+          <div class="cta-actions">
+            <router-link to="/contact-us" class="btn btn-primary btn-lg">{{ i18n.t('privacy.cta.contact') }}</router-link>
+          </div>
         </div>
       </div>
     </section>
@@ -32,62 +50,173 @@
 </template>
 
 <script setup>
+import { inject } from 'vue'
+
+const i18n = inject('i18n')
 </script>
 
 <style scoped>
 .privacy-policy-page {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .page-header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  color: white;
-  padding: 60px 0;
+  background-color: var(--color-page-bg);
+  color: var(--color-text-primary);
+  padding: 100px 0 80px;
+  border-bottom: 1px solid var(--color-gray-100);
+  text-align: center;
+}
+
+.page-tag {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 16px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 8px;
+  font-family: var(--font-family-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .page-header p {
-  opacity: 0.9;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .policy-content {
-  padding: 80px 0;
-  background-color: white;
+  padding: 120px 0;
+  background: linear-gradient(180deg, var(--color-page-bg) 0%, var(--color-white) 15%);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 16px;
+  line-height: 1.2;
 }
 
 .policy-card {
   max-width: 800px;
   margin: 0 auto;
-  background-color: var(--bg-light);
-  border-radius: 12px;
+}
+
+.policy-item {
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
   padding: 40px;
+  margin-bottom: 24px;
+  border: 1px solid var(--color-gray-100);
+  transition: all var(--transition-base);
 }
 
-.policy-card p {
-  color: var(--text-secondary);
-  line-height: 1.8;
-  margin-bottom: 20px;
+.policy-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 
-.policy-card p:last-child {
+.policy-item:last-child {
   margin-bottom: 0;
 }
 
+.policy-item h3 {
+  font-family: var(--font-family-display);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.policy-item p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  font-size: var(--text-base);
+}
+
+.cta-section {
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-page-bg) 100%);
+  padding: 120px 0;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: var(--font-bold);
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.cta-content p {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
+  .page-header {
+    padding: 80px 0 60px;
+  }
+
+  .policy-content,
+  .cta-section {
+    padding: 80px 0;
+  }
+
   .page-header h1 {
     font-size: 1.75rem;
   }
 
-  .policy-content {
-    padding: 40px 0;
+  .policy-item {
+    padding: 28px;
   }
 
-  .policy-card {
-    padding: 24px;
+  .cta-content h2 {
+    font-size: 1.75rem;
   }
 }
 </style>

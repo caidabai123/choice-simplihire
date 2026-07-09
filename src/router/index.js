@@ -1,22 +1,46 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import AboutUs from '../views/AboutUs.vue'
-import Services from '../views/Services.vue'
-import WhyChooseUs from '../views/WhyChooseUs.vue'
-import TalentPool from '../views/TalentPool.vue'
-import ForEmployers from '../views/ForEmployers.vue'
-import ContactUs from '../views/ContactUs.vue'
-import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/about-us', name: 'AboutUs', component: AboutUs },
-  { path: '/services', name: 'Services', component: Services },
-  { path: '/why-choose-us', name: 'WhyChooseUs', component: WhyChooseUs },
-  { path: '/talent-pool', name: 'TalentPool', component: TalentPool },
-  { path: '/for-employers', name: 'ForEmployers', component: ForEmployers },
-  { path: '/contact-us', name: 'ContactUs', component: ContactUs },
-  { path: '/privacy-policy', name: 'PrivacyPolicy', component: PrivacyPolicy }
+  { 
+    path: '/', 
+    name: 'Home', 
+    component: () => import('../views/Home.vue')
+  },
+  { 
+    path: '/about-us', 
+    name: 'AboutUs', 
+    component: () => import('../views/AboutUs.vue')
+  },
+  { 
+    path: '/services', 
+    name: 'Services', 
+    component: () => import('../views/Services.vue')
+  },
+  { 
+    path: '/why-choose-us', 
+    name: 'WhyChooseUs', 
+    component: () => import('../views/WhyChooseUs.vue')
+  },
+  { 
+    path: '/talent-pool', 
+    name: 'TalentPool', 
+    component: () => import('../views/TalentPool.vue')
+  },
+  { 
+    path: '/for-employers', 
+    name: 'ForEmployers', 
+    component: () => import('../views/ForEmployers.vue')
+  },
+  { 
+    path: '/contact-us', 
+    name: 'ContactUs', 
+    component: () => import('../views/ContactUs.vue')
+  },
+  { 
+    path: '/privacy-policy', 
+    name: 'PrivacyPolicy', 
+    component: () => import('../views/PrivacyPolicy.vue')
+  }
 ]
 
 const router = createRouter({
