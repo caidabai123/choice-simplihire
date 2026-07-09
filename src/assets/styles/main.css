@@ -5,23 +5,23 @@
 }
 
 :root {
-  --color-primary: #1E3A5F;
-  --color-primary-dark: #152A45;
-  --color-primary-light: #2D4A73;
-  --color-primary-50: rgba(30, 58, 95, 0.05);
-  --color-primary-100: rgba(30, 58, 95, 0.1);
-  --color-primary-200: rgba(30, 58, 95, 0.2);
-  --color-secondary: #2C5282;
-  --color-secondary-light: #4A6FA5;
-  --color-secondary-dark: #1E3A5F;
-  --color-accent: #3182CE;
-  --color-accent-light: #63B3ED;
-  --color-accent-dark: #2B6CB0;
+  --color-primary: #6B7FD7;
+  --color-primary-dark: #5A6BC8;
+  --color-primary-light: #8B9CED;
+  --color-primary-50: rgba(107, 127, 215, 0.05);
+  --color-primary-100: rgba(107, 127, 215, 0.1);
+  --color-primary-200: rgba(107, 127, 215, 0.2);
+  --color-secondary: #7B8CDF;
+  --color-secondary-light: #9BA8EA;
+  --color-secondary-dark: #5A6BC8;
+  --color-accent: #8B9CED;
+  --color-accent-light: #AEB8F0;
+  --color-accent-dark: #7B8CDF;
   --color-text-primary: #1A202C;
   --color-text-secondary: #4A5568;
   --color-text-muted: #718096;
   --color-white: #FFFFFF;
-  --color-page-bg: #E8F4FD;
+  --color-page-bg: #F5F7FF;
   --color-gray-50: #F7FAFC;
   --color-gray-100: #EDF2F7;
   --color-gray-200: #E2E8F0;
@@ -35,7 +35,7 @@
   --color-success: #38A169;
   --color-warning: #D69E2E;
   --color-error: #E53E3E;
-  --color-info: #3182CE;
+  --color-info: #6B7FD7;
 
   --space-0: 0;
   --space-1: 0.25rem;
@@ -82,12 +82,12 @@
   --radius-2xl: 1rem;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 1px 2px 0 rgba(30, 58, 95, 0.04);
-  --shadow-md: 0 4px 6px -1px rgba(30, 58, 95, 0.06), 0 2px 4px -2px rgba(30, 58, 95, 0.04);
-  --shadow-lg: 0 10px 15px -3px rgba(30, 58, 95, 0.08), 0 4px 6px -4px rgba(30, 58, 95, 0.04);
-  --shadow-xl: 0 20px 25px -5px rgba(30, 58, 95, 0.1), 0 8px 10px -6px rgba(30, 58, 95, 0.06);
-  --shadow-2xl: 0 25px 50px -12px rgba(30, 58, 95, 0.15);
-  --shadow-inner: inset 0 2px 4px 0 rgba(30, 58, 95, 0.04);
+  --shadow-sm: 0 1px 2px 0 rgba(107, 127, 215, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(107, 127, 215, 0.06), 0 2px 4px -2px rgba(107, 127, 215, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(107, 127, 215, 0.08), 0 4px 6px -4px rgba(107, 127, 215, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(107, 127, 215, 0.1), 0 8px 10px -6px rgba(107, 127, 215, 0.06);
+  --shadow-2xl: 0 25px 50px -12px rgba(107, 127, 215, 0.15);
+  --shadow-inner: inset 0 2px 4px 0 rgba(107, 127, 215, 0.04);
 
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);

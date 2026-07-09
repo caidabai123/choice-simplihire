@@ -364,7 +364,7 @@ const handleSubmit = () => {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+  box-shadow: 0 0 0 3px rgba(107, 127, 215, 0.1);
 }
 
 .form-group textarea {

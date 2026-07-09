@@ -57,13 +57,13 @@
           <div class="showcase-images">
             <div class="image-grid">
               <div class="image-item image-item-1">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&auto=format" alt="Team Collaboration">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=800&fit=crop&auto=format" alt="Team Collaboration">
               </div>
               <div class="image-item image-item-2">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=400&fit=crop&auto=format" alt="Professional Team">
+                <img src="https://images.unsplash.com/photo-1551009175-8a6597d642ba?w=600&h=400&fit=crop&auto=format" alt="Professional Woman">
               </div>
               <div class="image-item image-item-3">
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format" alt="Business Meeting">
+                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop&auto=format" alt="Team Celebration">
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@ onMounted(() => {
   right: -150px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(30, 58, 95, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(107, 127, 215, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -214,7 +214,7 @@ onMounted(() => {
   left: -200px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(49, 130, 206, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(139, 156, 237, 0.12) 0%, transparent 70%);
 }
 
 .hero-content {
@@ -232,7 +232,7 @@ onMounted(() => {
   font-size: var(--text-sm);
   font-weight: 700;
   color: var(--color-primary);
-  background-color: rgba(30, 58, 95, 0.06);
+  background-color: rgba(107, 127, 215, 0.06);
   border-radius: var(--radius-full);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -275,7 +275,7 @@ onMounted(() => {
   gap: 120px;
   margin-top: 100px;
   padding-top: 60px;
-  border-top: 1px solid rgba(30, 58, 95, 0.1);
+  border-top: 1px solid rgba(107, 127, 215, 0.1);
 }
 
 .stat-item {
@@ -427,7 +427,7 @@ onMounted(() => {
   font-size: var(--text-xs);
   font-weight: 700;
   color: var(--color-primary);
-  background-color: rgba(30, 58, 95, 0.06);
+  background-color: rgba(107, 127, 215, 0.06);
   border-radius: var(--radius-full);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -464,7 +464,7 @@ onMounted(() => {
 
 .advantage-card:hover {
   background-color: var(--color-white);
-  border-color: rgba(30, 58, 95, 0.1);
+  border-color: rgba(107, 127, 215, 0.1);
   transform: translateY(-10px);
   box-shadow: var(--shadow-2xl);
 }
