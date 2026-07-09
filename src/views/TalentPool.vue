@@ -33,25 +33,25 @@
           <div class="talent-types">
             <div class="type-item">
               <div class="type-image">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=250&h=150&fit=crop" alt="Engineering">
+                <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=250&h=150&fit=crop" alt="Engineering">
               </div>
               <span>{{ i18n.t('talentPool.source.type1') }}</span>
             </div>
             <div class="type-item">
               <div class="type-image">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=250&h=150&fit=crop" alt="Product">
+                <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=250&h=150&fit=crop" alt="Product">
               </div>
               <span>{{ i18n.t('talentPool.source.type2') }}</span>
             </div>
             <div class="type-item">
               <div class="type-image">
-                <img src="https://images.unsplash.com/photo-1551736791-9f6c65e87506?w=250&h=150&fit=crop" alt="Design">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=250&h=150&fit=crop" alt="Design">
               </div>
               <span>{{ i18n.t('talentPool.source.type3') }}</span>
             </div>
             <div class="type-item">
               <div class="type-image">
-                <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=250&h=150&fit=crop" alt="Data">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=250&h=150&fit=crop" alt="Data">
               </div>
               <span>{{ i18n.t('talentPool.source.type4') }}</span>
             </div>
@@ -115,28 +115,28 @@
           <div class="advantages-grid">
             <div class="advantage-item">
               <div class="item-image">
-                <img src="https://images.unsplash.com/photo-1544717302-77c1702864a6?w=300&h=180&fit=crop" alt="Verified">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&h=180&fit=crop" alt="Verified">
               </div>
               <h3>{{ i18n.t('talentPool.advantage.item1') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item1Desc') }}</p>
             </div>
             <div class="advantage-item">
               <div class="item-image">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=180&fit=crop" alt="Experience">
+                <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=300&h=180&fit=crop" alt="Experience">
               </div>
               <h3>{{ i18n.t('talentPool.advantage.item2') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item2Desc') }}</p>
             </div>
             <div class="advantage-item">
               <div class="item-image">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=300&h=180&fit=crop" alt="Communication">
+                <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=300&h=180&fit=crop" alt="Communication">
               </div>
               <h3>{{ i18n.t('talentPool.advantage.item3') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item3Desc') }}</p>
             </div>
             <div class="advantage-item">
               <div class="item-image">
-                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=300&h=180&fit=crop" alt="Flexible">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&h=180&fit=crop" alt="Flexible">
               </div>
               <h3>{{ i18n.t('talentPool.advantage.item4') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item4Desc') }}</p>

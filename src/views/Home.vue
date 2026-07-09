@@ -20,6 +20,12 @@
             </router-link>
             <router-link to="/services" class="btn btn-hero-secondary">{{ i18n.t('home.hero.learnMore') }}</router-link>
           </div>
+          <div class="hero-scroll-hint">
+            <span>{{ i18n.t('home.hero.scrollHint') }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="scroll-arrow">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </div>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
@@ -51,28 +57,28 @@
         <div class="advantages-grid">
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&h=250&fit=crop" alt="Simplified Hiring">
+              <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=400&h=250&fit=crop" alt="Simplified Hiring">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card1') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card1Desc') }}</p>
           </div>
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=250&fit=crop" alt="Trusted Service">
+              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=400&h=250&fit=crop" alt="Trusted Service">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card2') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card2Desc') }}</p>
           </div>
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Global Talent">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=250&fit=crop" alt="Global Talent">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card3') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card3Desc') }}</p>
           </div>
           <div class="advantage-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1544717302-77c1702864a6?w=400&h=250&fit=crop" alt="Compliance">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=250&fit=crop" alt="Compliance">
             </div>
             <h3 class="card-title">{{ i18n.t('home.advantages.card4') }}</h3>
             <p class="card-description">{{ i18n.t('home.advantages.card4Desc') }}</p>
@@ -299,6 +305,31 @@ onMounted(() => {
   border-color: var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-primary-50);
+}
+
+.hero-scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.scroll-arrow {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
 }
 
 .hero-stats {

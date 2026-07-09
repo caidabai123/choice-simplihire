@@ -23,13 +23,13 @@
               </div>
             </div>
             <div class="service-image">
-              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Global Talent Recruitment">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Global Talent Recruitment">
             </div>
           </div>
 
           <div class="service-card">
             <div class="service-image">
-              <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=400&h=300&fit=crop" alt="Recruitment Process">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop" alt="Recruitment Process">
             </div>
             <div class="service-left">
               <div class="service-content">
@@ -47,13 +47,13 @@
               </div>
             </div>
             <div class="service-image">
-              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop" alt="Visa Compliance">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop" alt="Visa Compliance">
             </div>
           </div>
 
           <div class="service-card">
             <div class="service-image">
-              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=300&fit=crop" alt="Overseas Onboarding">
+              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=400&h=300&fit=crop" alt="Overseas Onboarding">
             </div>
             <div class="service-left">
               <div class="service-content">
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="service-image">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Custom Solutions">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop" alt="Custom Solutions">
             </div>
           </div>
         </div>

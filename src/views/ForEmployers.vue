@@ -1,4 +1,4 @@
-﻿﻿<template>
+﻿﻿﻿﻿<template>
   <div class="for-employers-page">
     <section class="page-header">
       <div class="container">
@@ -19,19 +19,19 @@
           <div class="pain-points">
             <div class="pain-item">
               <div class="pain-image">
-                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=350&h=200&fit=crop" alt="Time-consuming">
+                <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=350&h=200&fit=crop" alt="Time-consuming">
               </div>
               <span>{{ i18n.t('forEmployers.concept.pain1') }}</span>
             </div>
             <div class="pain-item">
               <div class="pain-image">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=350&h=200&fit=crop" alt="Quality">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=350&h=200&fit=crop" alt="Quality">
               </div>
               <span>{{ i18n.t('forEmployers.concept.pain2') }}</span>
             </div>
             <div class="pain-item">
               <div class="pain-image">
-                <img src="https://images.unsplash.com/photo-1544717302-77c1702864a6?w=350&h=200&fit=crop" alt="Compliance">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=350&h=200&fit=crop" alt="Compliance">
               </div>
               <span>{{ i18n.t('forEmployers.concept.pain3') }}</span>
             </div>

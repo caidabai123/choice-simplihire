@@ -18,7 +18,7 @@
         <div class="reasons-grid">
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1551009175-8a6734857c02?w=350&h=200&fit=crop" alt="Deep Industry">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=350&h=200&fit=crop" alt="Deep Industry">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason1') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason1Desc') }}</p>
@@ -26,7 +26,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?w=350&h=200&fit=crop" alt="Talent Network">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=350&h=200&fit=crop" alt="Talent Network">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason2') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason2Desc') }}</p>
@@ -34,7 +34,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=350&h=200&fit=crop" alt="Quality">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=350&h=200&fit=crop" alt="Quality">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason3') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason3Desc') }}</p>
@@ -42,7 +42,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=350&h=200&fit=crop" alt="Speed">
+              <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=350&h=200&fit=crop" alt="Speed">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason4') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason4Desc') }}</p>
@@ -50,7 +50,7 @@
 
           <div class="reason-card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=350&h=200&fit=crop" alt="Transparent">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=350&h=200&fit=crop" alt="Transparent">
             </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason5') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason5Desc') }}</p>
