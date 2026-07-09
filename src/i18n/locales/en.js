@@ -27,8 +27,7 @@ export default {
       title: 'Your Choice for a Simplified Hiring Process',
       subtitle: 'Ease your recruitment burden. We solve core corporate pain points including difficult overseas staffing, high labor costs and heavy management pressure. Source qualified young talents worldwide and streamline your full-cycle hiring process across 7 major developed countries.',
       cta: 'Request a Hiring Consultation',
-      learnMore: 'Learn More',
-      scrollHint: 'Scroll to explore'
+      learnMore: 'Learn More'
     },
     stats: {
       countries: '7+',

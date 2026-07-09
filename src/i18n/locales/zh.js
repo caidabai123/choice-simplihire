@@ -27,8 +27,7 @@ export default {
       title: '简化招聘流程，您的最佳选择',
       subtitle: '减轻您的招聘负担。我们解决企业核心痛点，包括海外招聘难、人力成本高和管理压力大。在全球7个主要发达国家寻找合格的年轻人才，简化您的全周期招聘流程。',
       cta: '预约招聘咨询',
-      learnMore: '了解更多',
-      scrollHint: '向下滚动探索'
+      learnMore: '了解更多'
     },
     stats: {
       countries: '7+',

@@ -11,9 +11,6 @@
           <div class="hero-tag">{{ i18n.t('home.hero.tag') }}</div>
           <h1 class="hero-title">{{ i18n.t('home.hero.title') }}</h1>
           <p class="hero-subtitle">{{ i18n.t('home.hero.subtitle') }}</p>
-          <div class="hero-visual">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop" alt="Global Talent Recruitment" class="hero-image">
-          </div>
           <div class="hero-actions">
             <router-link to="/contact-us" class="btn btn-hero-primary">
               <span>{{ i18n.t('home.hero.cta') }}</span>
@@ -22,12 +19,6 @@
               </svg>
             </router-link>
             <router-link to="/services" class="btn btn-hero-secondary">{{ i18n.t('home.hero.learnMore') }}</router-link>
-          </div>
-          <div class="hero-scroll-hint">
-            <span>{{ i18n.t('home.hero.scrollHint') }}</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="scroll-arrow">
-              <path d="M12 5v14M5 12l7 7 7-7"/>
-            </svg>
           </div>
         </div>
         <div class="hero-stats">
@@ -245,25 +236,11 @@ onMounted(() => {
 .hero-subtitle {
   font-size: var(--text-lg);
   line-height: 1.8;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   color: var(--color-text-secondary);
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.hero-visual {
-  margin-bottom: 32px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-2xl);
-  box-shadow: var(--shadow-xl);
 }
 
 .hero-actions {
@@ -322,31 +299,6 @@ onMounted(() => {
   border-color: var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-primary-50);
-}
-
-.hero-scroll-hint {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
-}
-
-.scroll-arrow {
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-    opacity: 0.6;
-  }
-  50% {
-    transform: translateY(8px);
-    opacity: 1;
-  }
 }
 
 .hero-stats {
