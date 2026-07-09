@@ -206,50 +206,64 @@ a:hover {
   border: 2px solid transparent;
   border-radius: var(--radius-lg);
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
 }
 
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-color: var(--color-primary);
+  box-shadow: none;
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
 }
 
 .btn-primary:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-secondary {
   background-color: transparent;
   color: var(--color-primary);
   border-color: var(--color-primary);
+  box-shadow: none;
 }
 
 .btn-secondary:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.btn-secondary:active {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-accent {
   background-color: var(--color-accent);
   color: var(--color-white);
   border-color: var(--color-accent);
+  box-shadow: none;
 }
 
 .btn-accent:hover {
   background-color: var(--color-accent-dark);
   border-color: var(--color-accent-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.btn-accent:active {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-ghost {
@@ -262,6 +276,10 @@ a:hover {
   background-color: var(--color-gray-50);
   color: var(--color-text-primary);
   transform: translateY(-2px);
+}
+
+.btn-ghost:active {
+  transform: translateY(0);
 }
 
 .btn-sm {
