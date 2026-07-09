@@ -22,14 +22,7 @@
           </div>
           <div class="intro-image">
             <div class="image-card">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
               <div class="address-badge">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
                 <span>{{ i18n.t('about.company.address') }}</span>
               </div>
             </div>
@@ -46,25 +39,10 @@
         </div>
         <div class="mv-grid">
           <div class="mv-card mission-card">
-            <div class="card-icon-wrap">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-            </div>
             <h3>{{ i18n.t('about.missionVision.missionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.missionContent') }}</p>
           </div>
           <div class="mv-card vision-card">
-            <div class="card-icon-wrap">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-              </div>
-            </div>
             <h3>{{ i18n.t('about.missionVision.visionTitle') }}</h3>
             <p>{{ i18n.t('about.missionVision.visionContent') }}</p>
           </div>
@@ -81,46 +59,18 @@
         </div>
         <div class="values-grid">
           <div class="value-card">
-            <div class="value-icon-wrap">
-              <div class="value-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-            </div>
             <h3>{{ i18n.t('about.values.value1') }}</h3>
             <p>{{ i18n.t('about.values.value1Desc') }}</p>
           </div>
           <div class="value-card">
-            <div class="value-icon-wrap">
-              <div class="value-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-            </div>
             <h3>{{ i18n.t('about.values.value2') }}</h3>
             <p>{{ i18n.t('about.values.value2Desc') }}</p>
           </div>
           <div class="value-card">
-            <div class="value-icon-wrap">
-              <div class="value-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-            </div>
             <h3>{{ i18n.t('about.values.value3') }}</h3>
             <p>{{ i18n.t('about.values.value3Desc') }}</p>
           </div>
           <div class="value-card">
-            <div class="value-icon-wrap">
-              <div class="value-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-            </div>
             <h3>{{ i18n.t('about.values.value4') }}</h3>
             <p>{{ i18n.t('about.values.value4Desc') }}</p>
           </div>
@@ -282,13 +232,11 @@ const regions = [
   border-radius: var(--radius-2xl);
   width: 100%;
   max-width: 380px;
-  height: 360px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
-  color: var(--color-primary);
   padding: 40px;
 }
 
@@ -331,26 +279,7 @@ const regions = [
   box-shadow: var(--shadow-xl);
 }
 
-.card-icon-wrap {
-  margin-bottom: 28px;
-}
 
-.card-icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  border-radius: var(--radius-xl);
-  color: white;
-  box-shadow: var(--shadow-md);
-}
-
-.card-icon svg {
-  width: 24px;
-  height: 24px;
-}
 
 .mv-card h3 {
   font-family: var(--font-family-display);
@@ -392,26 +321,7 @@ const regions = [
   box-shadow: var(--shadow-xl);
 }
 
-.value-icon-wrap {
-  margin-bottom: 24px;
-}
 
-.value-icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  border-radius: var(--radius-xl);
-  color: white;
-  box-shadow: var(--shadow-md);
-}
-
-.value-icon svg {
-  width: 24px;
-  height: 24px;
-}
 
 .value-card h3 {
   font-family: var(--font-family-display);

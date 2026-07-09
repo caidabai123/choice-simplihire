@@ -18,27 +18,12 @@
           <p>{{ i18n.t('forEmployers.concept.content') }}</p>
           <div class="pain-points">
             <div class="pain-item">
-              <div class="pain-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-                </svg>
-              </div>
               <span>{{ i18n.t('forEmployers.concept.pain1') }}</span>
             </div>
             <div class="pain-item">
-              <div class="pain-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
               <span>{{ i18n.t('forEmployers.concept.pain2') }}</span>
             </div>
             <div class="pain-item">
-              <div class="pain-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                </svg>
-              </div>
               <span>{{ i18n.t('forEmployers.concept.pain3') }}</span>
             </div>
           </div>
@@ -112,12 +97,7 @@
             <button class="faq-question" @click="toggleFaq(index - 1)">
               <span class="faq-label">Q{{ index }}</span>
               <span>{{ i18n.t(`forEmployers.faq.q${index}`) }}</span>
-              <svg v-if="activeFaq === index - 1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-              </svg>
-              <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
+              <span class="faq-toggle">{{ activeFaq === index - 1 ? '-' : '+' }}</span>
             </button>
             <div class="faq-answer" :class="{ 'active': activeFaq === index - 1 }">
               <span class="answer-label">A{{ index }}</span>
@@ -256,9 +236,8 @@ const toggleFaq = (index) => {
   border-radius: var(--radius-xl);
   padding: 32px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
   transition: all var(--transition-base);
   border: 1px solid transparent;
 }
@@ -271,27 +250,7 @@ const toggleFaq = (index) => {
   box-shadow: var(--shadow-xl);
 }
 
-.pain-icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  border-radius: var(--radius-xl);
-  color: white;
-  box-shadow: var(--shadow-md);
-}
 
-.pain-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.pain-item:hover .pain-icon {
-  background-color: var(--color-white);
-  color: var(--color-primary);
-}
 
 .pain-item span {
   font-weight: var(--font-semibold);
@@ -418,8 +377,10 @@ const toggleFaq = (index) => {
   font-size: var(--text-base);
 }
 
-.faq-question svg {
+.faq-toggle {
   color: var(--color-primary);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
   transition: transform var(--transition-fast);
   flex-shrink: 0;
 }

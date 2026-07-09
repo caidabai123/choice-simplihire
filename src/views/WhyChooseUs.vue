@@ -17,61 +17,26 @@
         </div>
         <div class="reasons-grid">
           <div class="reason-card">
-            <div class="card-icon-wrap">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                </svg>
-              </div>
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason1') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason1Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-icon-wrap">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason2') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason2Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-icon-wrap">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason3') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason3Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-icon-wrap">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason4') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason4Desc') }}</p>
           </div>
 
           <div class="reason-card">
-            <div class="card-icon-wrap">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-            </div>
             <h3 class="reason-title">{{ i18n.t('whyChoose.reasons.reason5') }}</h3>
             <p class="reason-description">{{ i18n.t('whyChoose.reasons.reason5Desc') }}</p>
           </div>
@@ -200,26 +165,7 @@ const i18n = inject('i18n')
   box-shadow: var(--shadow-xl);
 }
 
-.card-icon-wrap {
-  margin-bottom: 24px;
-}
 
-.card-icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  border-radius: var(--radius-xl);
-  color: white;
-  box-shadow: var(--shadow-md);
-}
-
-.card-icon svg {
-  width: 24px;
-  height: 24px;
-}
 
 .reason-title {
   font-family: var(--font-family-display);

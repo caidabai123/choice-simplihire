@@ -32,35 +32,15 @@
           <p>{{ i18n.t('talentPool.source.content') }}</p>
           <div class="talent-types">
             <div class="type-item">
-              <div class="type-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-              </div>
               <span>{{ i18n.t('talentPool.source.type1') }}</span>
             </div>
             <div class="type-item">
-              <div class="type-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
               <span>{{ i18n.t('talentPool.source.type2') }}</span>
             </div>
             <div class="type-item">
-              <div class="type-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
               <span>{{ i18n.t('talentPool.source.type3') }}</span>
             </div>
             <div class="type-item">
-              <div class="type-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </div>
               <span>{{ i18n.t('talentPool.source.type4') }}</span>
             </div>
           </div>
@@ -122,46 +102,18 @@
           <p>{{ i18n.t('talentPool.advantage.content') }}</p>
           <div class="advantages-grid">
             <div class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <div class="advantage-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                </div>
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item1') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item1Desc') }}</p>
             </div>
             <div class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <div class="advantage-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item2') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item2Desc') }}</p>
             </div>
             <div class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <div class="advantage-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item3') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item3Desc') }}</p>
             </div>
             <div class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <div class="advantage-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
               <h3>{{ i18n.t('talentPool.advantage.item4') }}</h3>
               <p>{{ i18n.t('talentPool.advantage.item4Desc') }}</p>
             </div>
@@ -324,27 +276,7 @@ const i18n = inject('i18n')
   box-shadow: var(--shadow-lg);
 }
 
-.type-icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  border-radius: var(--radius-xl);
-  color: white;
-  box-shadow: var(--shadow-md);
-}
 
-.type-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.type-item:hover .type-icon {
-  background-color: var(--color-white);
-  color: var(--color-primary);
-}
 
 .type-item span {
   font-weight: var(--font-medium);
@@ -464,27 +396,7 @@ const i18n = inject('i18n')
   box-shadow: var(--shadow-xl);
 }
 
-.advantage-icon-wrap {
-  margin-bottom: 20px;
-}
 
-.advantage-icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  border-radius: var(--radius-xl);
-  color: white;
-  box-shadow: var(--shadow-md);
-  margin: 0 auto;
-}
-
-.advantage-icon svg {
-  width: 24px;
-  height: 24px;
-}
 
 .advantage-item h3 {
   font-family: var(--font-family-display);
