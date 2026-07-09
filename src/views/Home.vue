@@ -12,8 +12,19 @@
           <h1 class="hero-title">{{ i18n.t('home.hero.title') }}</h1>
           <p class="hero-subtitle">{{ i18n.t('home.hero.subtitle') }}</p>
           <div class="hero-actions">
-            <router-link to="/contact-us" class="btn btn-primary btn-lg">{{ i18n.t('home.hero.cta') }}</router-link>
-            <router-link to="/services" class="btn btn-secondary btn-lg">{{ i18n.t('home.hero.learnMore') }}</router-link>
+            <router-link to="/contact-us" class="btn btn-hero-primary">
+              <span>{{ i18n.t('home.hero.cta') }}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </router-link>
+            <router-link to="/services" class="btn btn-hero-secondary">{{ i18n.t('home.hero.learnMore') }}</router-link>
+          </div>
+          <div class="hero-scroll-hint">
+            <span>{{ i18n.t('home.hero.scrollHint') }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="scroll-arrow">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
           </div>
         </div>
         <div class="hero-stats">
@@ -240,9 +251,85 @@ onMounted(() => {
 
 .hero-actions {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn-hero-primary {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+  transform: translateY(0);
+}
+
+.btn-hero-primary:hover {
+  background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.45);
+}
+
+.btn-hero-primary:active {
+  transform: translateY(0);
+}
+
+.btn-hero-secondary {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border: 1.5px solid var(--color-gray-200);
+  padding: 18px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-hero-secondary:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+}
+
+.hero-scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.scroll-arrow {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
 }
 
 .hero-stats {
