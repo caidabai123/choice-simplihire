@@ -1,5 +1,6 @@
 <template>
   <footer class="footer">
+    <span style="display:none">{{ i18n.locale }}</span>
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">

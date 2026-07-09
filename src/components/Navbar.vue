@@ -1,5 +1,6 @@
 ﻿﻿﻿﻿﻿<template>
   <nav class="navbar" :class="{ 'navbar-scrolled': isScrolled }">
+    <span style="display:none">{{ i18n.locale }}</span>
     <div class="container">
       <div class="navbar-brand">
         <router-link to="/" class="brand-link">
