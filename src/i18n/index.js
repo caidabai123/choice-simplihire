@@ -2,7 +2,7 @@ import { ref, provide, inject } from 'vue'
 import en from './locales/en.js'
 import zh from './locales/zh.js'
 
-const locale = ref('en')
+const locale = ref('zh')
 const messages = {
   en,
   zh

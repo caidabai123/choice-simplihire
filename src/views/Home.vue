@@ -6,8 +6,6 @@
       </div>
       <div class="hero-decoration"></div>
       <div class="hero-decoration hero-decoration-2"></div>
-      <div class="hero-radial-overlay"></div>
-      <div class="hero-lines"></div>
       <div class="container">
         <div class="hero-content">
           <div class="hero-tag">{{ i18n.t('home.hero.tag') }}</div>
@@ -173,12 +171,12 @@ onMounted(() => {
 
 <style scoped>
 .home-page {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 .hero-banner {
-  background: linear-gradient(135deg, #2E5C9E 0%, #4A90D9 30%, #7AB4F5 60%, #A8D4F8 100%);
-  color: var(--color-white);
+  background-color: var(--color-page-bg);
+  color: var(--color-text-primary);
   padding: 180px 0 160px;
   position: relative;
   overflow: hidden;
@@ -197,7 +195,7 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: opacity(0.1);
+  filter: opacity(0.15);
 }
 
 .hero-decoration {
@@ -206,7 +204,7 @@ onMounted(() => {
   right: -150px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(30, 58, 95, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -216,58 +214,7 @@ onMounted(() => {
   left: -200px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
-}
-
-.hero-radial-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  background: radial-gradient(ellipse at 60% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-              radial-gradient(ellipse at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
-              radial-gradient(ellipse at 20% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 45%);
-}
-
-.hero-lines {
-  position: absolute;
-  top: 0;
-  right: 10%;
-  width: 300px;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.3;
-}
-
-.hero-lines::before,
-.hero-lines::after {
-  content: '';
-  position: absolute;
-  width: 120px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  border-radius: 1px;
-}
-
-.hero-lines::before {
-  top: 20%;
-  right: 20px;
-  transform: rotate(-15deg);
-  animation: lineFloat 6s ease-in-out infinite;
-}
-
-.hero-lines::after {
-  top: 35%;
-  right: 40px;
-  transform: rotate(-10deg);
-  animation: lineFloat 8s ease-in-out infinite 1s;
-}
-
-@keyframes lineFloat {
-  0%, 100% { transform: translateY(0) rotate(-15deg); opacity: 0.3; }
-  50% { transform: translateY(-20px) rotate(-15deg); opacity: 0.6; }
+  background: radial-gradient(circle, rgba(49, 130, 206, 0.1) 0%, transparent 70%);
 }
 
 .hero-content {
@@ -284,8 +231,8 @@ onMounted(() => {
   margin-bottom: 32px;
   font-size: var(--text-sm);
   font-weight: 700;
-  color: var(--color-primary-dark);
-  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
+  background-color: rgba(30, 58, 95, 0.06);
   border-radius: var(--radius-full);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -298,18 +245,18 @@ onMounted(() => {
   margin-bottom: 40px;
   line-height: 1.05;
   letter-spacing: -0.03em;
-  color: var(--color-white);
+  color: var(--color-text-primary);
 }
 
 .text-primary {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
   line-height: 1.9;
   margin-bottom: 56px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(26, 32, 44, 0.7);
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -322,39 +269,13 @@ onMounted(() => {
   flex-wrap: wrap;
 }
 
-.hero-banner .btn-primary {
-  background-color: rgba(255, 255, 255, 0.95);
-  color: var(--color-primary-dark);
-  border-color: rgba(255, 255, 255, 0.95);
-}
-
-.hero-banner .btn-primary:hover {
-  background-color: var(--color-white);
-  border-color: var(--color-white);
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.hero-banner .btn-secondary {
-  background-color: transparent;
-  color: var(--color-white);
-  border-color: rgba(255, 255, 255, 0.6);
-}
-
-.hero-banner .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: var(--color-white);
-  border-color: rgba(255, 255, 255, 0.8);
-  transform: translateY(-3px);
-}
-
 .hero-stats {
   display: flex;
   justify-content: center;
   gap: 120px;
   margin-top: 100px;
   padding-top: 60px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(30, 58, 95, 0.1);
 }
 
 .stat-item {
@@ -365,7 +286,7 @@ onMounted(() => {
   font-family: var(--font-family-display);
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 800;
-  color: var(--color-white);
+  color: var(--color-primary);
   margin-bottom: 12px;
   letter-spacing: -0.02em;
 }
@@ -373,14 +294,14 @@ onMounted(() => {
 .stat-divider {
   width: 50px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
   margin: 16px auto;
 }
 
 .stat-label {
   font-size: var(--text-sm);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(74, 85, 104, 0.8);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }

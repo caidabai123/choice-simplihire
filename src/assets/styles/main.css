@@ -2,21 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
-  --color-primary: #4A90D9;
-  --color-primary-dark: #2E5C9E;
-  --color-primary-light: #7AB4F5;
-  --color-primary-50: rgba(74, 144, 217, 0.05);
-  --color-primary-100: rgba(74, 144, 217, 0.1);
-  --color-primary-200: rgba(74, 144, 217, 0.2);
-  --color-secondary: #3B7DD8;
-  --color-secondary-light: #6BA3E0;
-  --color-secondary-dark: #285AA0;
-  --color-accent: #5BA3E8;
-  --color-accent-light: #8BC4F9;
-  --color-accent-dark: #3D8DE0;
+  --color-primary: #1E3A5F;
+  --color-primary-dark: #152A45;
+  --color-primary-light: #2D4A73;
+  --color-primary-50: rgba(30, 58, 95, 0.05);
+  --color-primary-100: rgba(30, 58, 95, 0.1);
+  --color-primary-200: rgba(30, 58, 95, 0.2);
+  --color-secondary: #2C5282;
+  --color-secondary-light: #4A6FA5;
+  --color-secondary-dark: #1E3A5F;
+  --color-accent: #3182CE;
+  --color-accent-light: #63B3ED;
+  --color-accent-dark: #2B6CB0;
   --color-text-primary: #1A202C;
   --color-text-secondary: #4A5568;
   --color-text-muted: #718096;
@@ -35,7 +36,7 @@
   --color-success: #38A169;
   --color-warning: #D69E2E;
   --color-error: #E53E3E;
-  --color-info: #4A90D9;
+  --color-info: #3182CE;
 
   --space-0: 0;
   --space-1: 0.25rem;
@@ -216,16 +217,24 @@ a:hover {
   box-shadow: none;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+a.btn-primary:hover {
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
+  color: var(--color-white) !important;
   transform: translateY(-3px);
   box-shadow: var(--shadow-xl);
 }
 
-.btn-primary:active {
+.btn-primary:active,
+a.btn-primary:active {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-white) !important;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-secondary {
@@ -243,8 +252,13 @@ a:hover {
 }
 
 .btn-secondary:active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-accent {
@@ -254,16 +268,24 @@ a:hover {
   box-shadow: none;
 }
 
-.btn-accent:hover {
+.btn-accent:hover,
+a.btn-accent:hover {
   background-color: var(--color-accent-dark);
   border-color: var(--color-accent-dark);
+  color: var(--color-white) !important;
   transform: translateY(-3px);
   box-shadow: var(--shadow-xl);
 }
 
-.btn-accent:active {
+.btn-accent:active,
+a.btn-accent:active {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: var(--color-white) !important;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-ghost {
@@ -279,7 +301,11 @@ a:hover {
 }
 
 .btn-ghost:active {
+  background-color: var(--color-gray-100);
+  color: var(--color-text-primary);
   transform: translateY(0);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-sm {

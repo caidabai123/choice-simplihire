@@ -9,7 +9,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
-  base: '/choice-simplihire/',
+  base: '/',
   build: {
     minify: 'terser',
     rollupOptions: {
